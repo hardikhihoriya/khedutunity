@@ -74,7 +74,7 @@ a:focus{
 	background-size:cover;
 }
 .pattern{
-	background:rgba(0,0,0,.5) url(../images/pattern.png);
+	background:rgba(0,0,0,.5) url(/images/pattern.png);
 	padding-top:100px;
 }
 .container{
@@ -1136,7 +1136,7 @@ background: #00aaff;
 	        animation: load 0.8s linear 0.8s infinite;
 }
 #loader .lading{
-	background-image: url(../images/loading.gif);
+	background-image: url(/images/loading.gif);
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 0;
