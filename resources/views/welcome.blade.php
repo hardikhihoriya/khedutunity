@@ -59,59 +59,13 @@
                             We Are
                         </span>
                     </h3><!-- /.section-name -->
-                    <h2 class="section-title">
+                    <h3 class="section-title">
                         Coming Soon
-                    </h2><!-- /.Section-title  -->
+                    </h3><!-- /.Section-title  -->
                     <div id="time_countdown" class="time-count-container">
-
-                        <div class="col-sm-3">
-                            <div class="time-box">
-                                <div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
-                                    <span class="time-number">
-                                        <span class="digit">0</span>
-                                        <span class="digit">0</span>
-                                        <span class="digit">0</span>
-                                    </span>
-                                    <span class="time-name">Days</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <div class="time-box">
-                                <div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
-                                    <span class="time-number">
-                                        <span class="digit">0</span>
-                                        <span class="digit">0</span>	
-                                    </span>
-                                    <span class="time-name">Hours</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <div class="time-box">
-                                <div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
-                                    <span class="time-number">
-                                        <span class="digit">0</span>
-                                        <span class="digit">0</span>
-                                    </span>
-                                    <span class="time-name">Minutes</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <div class="time-box">
-                                <div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
-                                    <span class="time-number">
-                                        <span class="digit">0</span>
-                                        <span class="digit">0</span>
-                                    </span>
-                                    <span class="time-name">Seconds</span>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col-sm-12">
+                            <h1 style=" text-align: center; font-size: 115px;">09/09/2017</h1>                            
+                        </div>                        
                     </div><!-- /.time-count-container -->
                     <div class="next-section">
                         <a class="go-to-about"><span></span></a>
