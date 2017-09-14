@@ -8,5 +8,10 @@ return [
     'USER_ORIGINAL_IMAGE_UPLOAD_PATH' => 'uploads/user/original/',
     'USER_THUMB_IMAGE_UPLOAD_PATH' => 'uploads/user/thumb/',
     'USER_THUMB_IMAGE_HEIGHT' => '300',
-    'USER_THUMB_IMAGE_WIDTH' => '300',    
+    'USER_THUMB_IMAGE_WIDTH' => '300',
+    // District Module 
+    'DISTRICT_ORIGINAL_IMAGE_UPLOAD_PATH' => 'uploads/district/original/',
+    'DISTRICT_THUMB_IMAGE_UPLOAD_PATH' => 'uploads/district/thumb/',
+    'DISTRICT_THUMB_IMAGE_HEIGHT' => '300',
+    'DISTRICT_THUMB_IMAGE_WIDTH' => '300',
 ];

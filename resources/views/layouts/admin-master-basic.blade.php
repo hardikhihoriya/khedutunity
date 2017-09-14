@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
         <link rel="canonical" href="{{Request::url()}}" />
-        <title>Security App</title>
+        <title>Khedut App</title>
         <meta name="keywords" content="{{trans('label.keywords')}}" />
         <meta name="description" content="{{trans('label.description')}}" />
         <link rel="stylesheet" href="{{asset('css/admin/bootstrap/css/bootstrap.min.css')}}">
@@ -16,9 +16,8 @@
         <link rel="stylesheet" href="{{asset('css/admin/custom.css')}}">
         @yield('header')
     </head>
-    <body class="hold-transition login-page">
-      <div class="login-box login_blog">
-        
+    <body class="hold-transition login-page" style="background-image: url('<?php echo url('/images/loginbackground/bg1.jpg')?>'); background-repeat: no-repeat; background-size: cover;">
+      <div class="login-box login_blog">        
         <div>
           @if (count($errors) > 0)
           <div class="alert alert-danger danger">

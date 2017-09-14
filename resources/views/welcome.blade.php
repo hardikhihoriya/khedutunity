@@ -41,6 +41,7 @@
                     <li class="active"><a href="#page-top">Home</a></li>	
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>		
+                    <li><a href="#login">Login</a></li>		
                 </ul> <!-- /.nav .navbar-nav -->
             </nav> <!-- /.navbar-collapse  -->
         </div><!-- /#main-menu -->
@@ -187,35 +188,55 @@
                     </form><!-- /#contact-form -->
                     <?php
                     if (isset($_POST['submit'])) {
-                    if ($_POST['fullname'] == '' || $_POST['email'] == '' || $_POST['details'] == '') {
-                    echo "Fill All Fields..";
-                    } else {
-                    $to = "icc@cprindia.org"; // this is your Email address
-                    $from = $_POST['email']; // this is the sender's Email address
-                    $firstName = $_POST['fullname'];
-                    $details = $_POST['details'];
-                    $subject = "Reach out icc feedback";
-                    $subject2 = "Copy of your form submission";
-                    $message = $firstName . " wrote the following:" . "\n\n" . $details;
-                    $message2 = "Here is a copy of your message " . $firstName . "\n\n" . $details;
+                        if ($_POST['fullname'] == '' || $_POST['email'] == '' || $_POST['details'] == '') {
+                            echo "Fill All Fields..";
+                        } else {
+                            $to = "icc@cprindia.org"; // this is your Email address
+                            $from = $_POST['email']; // this is the sender's Email address
+                            $firstName = $_POST['fullname'];
+                            $details = $_POST['details'];
+                            $subject = "Reach out icc feedback";
+                            $subject2 = "Copy of your form submission";
+                            $message = $firstName . " wrote the following:" . "\n\n" . $details;
+                            $message2 = "Here is a copy of your message " . $firstName . "\n\n" . $details;
 
-                    $headers = "From:" . $from;
-                    $headers2 = "From:" . $to;
-                    mail($to, $subject, $message, $headers);
-                    mail($from, $subject2, $message2, $headers2); // sends a copy of the message to the sender
-                    echo "Mail Sent. Thank you " . $firstName . ", we will contact you shortly.";
-                    }
+                            $headers = "From:" . $from;
+                            $headers2 = "From:" . $to;
+                            mail($to, $subject, $message, $headers);
+                            mail($from, $subject2, $message2, $headers2); // sends a copy of the message to the sender
+                            echo "Mail Sent. Thank you " . $firstName . ", we will contact you shortly.";
+                        }
                     }
                     ?>
 
                     <div class="next-section">
                         <a class="go-to-page-top"><span></span></a>
-                    </div><!-- /.next-section -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                </div><!-- /.container -->
-            </div><!-- /.pattern -->
+        <section id="login" class="section-style" data-background-image="http://khedutunity.localhost.com/images/background/newsletter.jpg" style="background-image: url(&quot;http://khedutunity.localhost.com/images/background/newsletter.jpg&quot;);">
+            <div class="pattern height-resize">
+                <div class="container">
+                    <h3 class="section-name">
+                        <span>
+                            User Related
+                        </span>
+                    </h3>
+                    <h2 class="section-title">
+                        Agriculture 
+                    </h2>
+                    <p class="section-description">
+                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        </section><!-- /#contact -->
+
+
+
         <!-- Contact Section End -->
         <!-- jQuery Library -->
         <script type="text/javascript" src="{{ asset('/js/front/js/jquery-2.1.0.min.js')}}"></script>

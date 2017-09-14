@@ -21,7 +21,7 @@ class UsersController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('IsAdmininstrator');
         $this->userOriginalImageUploadPath = Config::get('constant.USER_ORIGINAL_IMAGE_UPLOAD_PATH');
         $this->userThumbImageUploadPath = Config::get('constant.USER_THUMB_IMAGE_UPLOAD_PATH');
         $this->userThumbImageHeight = Config::get('constant.USER_THUMB_IMAGE_HEIGHT');
@@ -101,14 +101,6 @@ class UsersController extends Controller
     
     public function getUser()
     {        
-//        $phone_number = '917874377823'; // Your phone number including country code
-//        $type = 'sms';
-//        // $type = 'voice';
-//        $result = Whatsapp::requestCode($phone_number, $type);
-//        echo "<pre>";
-//        print_r($result);
-//        exit;
-        
         $uploadUserThumbPath = $this->userThumbImageUploadPath;
         $users = User::where('is_admin',0)->get();
         return view('admin.user-list',compact('users','uploadUserThumbPath'));

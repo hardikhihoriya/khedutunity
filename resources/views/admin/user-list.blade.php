@@ -6,6 +6,9 @@
     <h1>
         User Management
         <small>Users</small>
+        <div class="pull-right">
+            <a href="{{ url('admin/add-user') }}" class="btn btn-block btn-success add-btn-primary pull-right" alt="add" title="add">{{trans('labels.add')}}</a>
+        </div>
     </h1>
 </section>
 
@@ -35,7 +38,7 @@
                                     {{$user->unique_id}}
                                 </td>
                                 <td>
-                                    {{$user->name}}
+                                    {{$user->firstname}}
                                 </td>
                                 <td>
                                     {{ $user->email }}

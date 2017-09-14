@@ -28,26 +28,26 @@
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
                 <div class="body_content">
-                  @if (count($errors) > 0)
-                  <div class="alert alert-danger danger">
-                      <button aria-hidden="true" data-dismiss="alert" class="close" type="button">X</button>
-                          @foreach ($errors->all() as $error)
-                            {{ $error }}<br/>
-                          @endforeach
-                  </div>
-                  @endif
-                  @if($message = Session::get('error'))
-                  <div class="alert alert-danger danger">
-                      <button aria-hidden="true" data-dismiss="alert" class="close" type="button">X</button>
+                    @if (count($errors) > 0)
+                    <div class="alert alert-danger danger">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">X</button>
+                        @foreach ($errors->all() as $error)
+                        {{ $error }}<br/>
+                        @endforeach
+                    </div>
+                    @endif
+                    @if($message = Session::get('error'))
+                    <div class="alert alert-danger danger">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">X</button>
                         {{ $message }}
-                  </div>
-                  @endif
-                  @if($message = Session::get('success'))
-                  <div class="alert alert-success success">
-                      <button aria-hidden="true" data-dismiss="alert" class="close" type="button">X</button>
+                    </div>
+                    @endif
+                    @if($message = Session::get('success'))
+                    <div class="alert alert-success success">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">X</button>
                         {{ $message }}
-                  </div>
-                  @endif
+                    </div>
+                    @endif
                 </div>
                 @yield('content')
             </div>
@@ -58,14 +58,13 @@
                 </div>
                 <strong>Copyright</strong>
             </footer>
-            
+
             @include('layouts/admin-right-sidebar')
-            
+
             <div class="control-sidebar-bg"></div>
         </div>
         <script src="{{asset('css/admin/plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
         <script src="{{asset('css/admin/bootstrap/js/bootstrap.min.js')}}"></script>
-        <!-- <script src="{{asset('css/admin/plugins/iCheck/icheck.min.js')}}"></script> -->
         <script src="{{asset('css/admin/plugins/fastclick/fastclick.js')}}"></script>
         <script src="{{asset('css/admin/dist/js/app.min.js')}}"></script>
         <script src="{{asset('css/admin/plugins/datatables/jquery.dataTables.min.js')}}"></script>
@@ -74,17 +73,13 @@
         <script src="{{asset('css/admin/plugins/chartjs/Chart.min.js')}}"></script>
         <script src="{{asset('css/admin/dist/js/demo.js')}}"></script>
         <script src="{{asset('js/admin/jquery.validate.min.js')}}"></script>
-        
+        <script src="{{ asset('plugins/bootbox/bootbox.min.js') }}" type="text/javascript"></script>
+
         @yield('script')
         <script>
-          // $(function () {
-          //   $('input').iCheck({
-          //     checkboxClass: 'icheckbox_square-blue',
-          //     radioClass: 'iradio_square-blue',
-          //     increaseArea: '20%'
-          //   });
-          // });
-          $(".is_number").on('keyup', function(){ this.value = this.value.replace(/[^0-9]/gi, '');});   
+            $(".is_number").on('keyup', function () {
+                this.value = this.value.replace(/[^0-9]/gi, '');
+            });
         </script>
     </body>
 </html>
