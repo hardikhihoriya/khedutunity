@@ -90,39 +90,6 @@
 @endsection
 @section('script')
 <script>
-    jQuery(document).ready(function () {
-        var registerRules = {
-            email: {
-                required: true,
-                email: true
-            },
-            name: {
-                required: true
-            },
-            phone: {
-                required: true
-            },
-            password: {
-                required: true
-            }
-        };
-        $("#registerForm").validate({
-            rules: registerRules,
-            messages: {
-                email: {
-                    required: 'Enter valid email'
-                },
-                password: {
-                    required: 'Enter password'
-                },
-                name: {
-                    required: 'Enter name'
-                },
-                phone: {
-                    required: 'Enter phone'
-                }
-            }
-        });
-    });
+    
 </script>
 @endsection

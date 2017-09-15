@@ -82,6 +82,39 @@
         var ajaxParams = {};
         getadsList(ajaxParams);
         // Remove user
+        $(document).on('click', '.btn-view-district', function (e) {
+            var Data = $(this).attr('data-id');
+            var jsonData = $.parseJSON(Data);
+            var districtName = jsonData.district_name;
+            var districtCode = jsonData.district_code;
+            var districtImage = jsonData.district_image;
+            console.log(jsonData);
+            var dialog = bootbox.dialog({
+                title: districtName,
+                message: '<div class="text-center"><i class="fa fa-spin fa-spinner"></i> Loading...</div>',
+                buttons: {
+//                    cancel: {
+//                        label: '<i class="fa fa-times"></i> Cancel'
+//                    },
+                    confirm: {
+                        label: '<i class="fa fa-check"></i> Confirm',
+                        className: 'btn-success',
+                    },
+//                    confirm: {
+//                        label: "Okay Done",
+//                        className: 'btn-info',
+//                        callback: function () {
+//                            Example.show('OK clicked');
+//                        }
+//                    }
+                },
+            });
+            dialog.init(function () {
+                setTimeout(function () {
+                    dialog.find('.bootbox-body').html('<h2>District Code => ' + districtCode + ' </h2>' + districtImage);
+                }, 2000);
+            });
+        });
         $(document).on('click', '.btn-delete-district', function (e) {
             e.preventDefault();
             var userId = $(this).attr('data-id');
@@ -99,14 +132,14 @@
                 buttons: {
                     Yes: {
                         label: 'Yes',
-                        className: 'btn green',
+                        className: 'btn-danger',
                         callback: function () {
                             getadsList(ajaxParams);
                         }
                     },
                     No: {
                         label: 'No',
-                        className: 'btn btn-default'
+                        className: 'btn-success'
                     }
                 }
             });

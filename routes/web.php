@@ -39,3 +39,7 @@ Route::get('/admin/add-district','Admin\districtController@addDistrict');
 Route::post('/admin/list-district-ajax', 'Admin\districtController@listDistrictAjax');
 Route::get('/admin/edit-district/{id}', array('as' => 'district.edit', 'uses' => 'Admin\districtController@editDistrict'));
 Route::post('/admin/district-save','Admin\districtController@saveDistrict');
+
+// Taluka List In Gujarat 
+
+Route::get('/admin/taluka','Admin\talukaController@index');

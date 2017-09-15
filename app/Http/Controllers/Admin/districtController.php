@@ -34,6 +34,11 @@ class districtController extends Controller {
     }
 
     public function saveDistrict() {
+        $this->validate(request(), [
+            'district_name' => 'required',
+            'district_code' => 'required',
+            'district_image' => 'required',
+        ]);
         $districtInput = Input::all();
         $district = $this->objDistrict->find($districtInput['id']);
         $hiddenProfile = Input::get('hidden_profile');
@@ -69,16 +74,19 @@ class districtController extends Controller {
                 }
             }
         }
-
-        if (isset($districtInput['id']) && $districtInput > 0) {
+        if (isset($districtInput['id']) && $districtInput['id'] > 0) {
             $district->district_name = $districtInput['district_name'];
             $district->district_code = $districtInput['district_code'];
             $district->district_image = $districtInput['district_image'];
             $district->save();
             return Redirect::to("/admin/district/")->with('success', trans('adminmsg.district_updated_success'));
         } else {
-            $this->objDistrict->create($districtInput);
-            return Redirect::to("/admin/district/")->with('success', trans('adminmsg.district_created_success'));
+            try {
+                $this->objDistrict->create($districtInput);
+                return Redirect::to("/admin/district/")->with('success', trans('adminmsg.district_created_success'));
+            } catch (\Illuminate\Database\QueryException $e) {
+                return back()->withInput()->withErrors(['loang digit in district code']);
+            }
         }
     }
 
@@ -146,8 +154,9 @@ class districtController extends Controller {
         if (!empty($records["data"])) {
             foreach ($records["data"] as $key => $_records) {
                 $edit = route('district.edit', $_records->id);
-                $records["data"][$key]['district_image'] = ($_records->district_image != '' && File::exists(public_path($this->districtThumbImageUploadPath . $_records->district_image)) ? '<img src="' . url($this->districtThumbImageUploadPath . $_records->district_image) . '" alt="{{$_records->user_pic}}"  height="50" width="50">' : '<img src="' . asset('/uploads/user/thumb/default.png') . '" class="user-image" alt="Default Image" height="50" width="50">');
+                $records["data"][$key]['district_image'] = ($_records->district_image != '' && File::exists(public_path($this->districtThumbImageUploadPath . $_records->district_image)) ? '<img src="' . url($this->districtThumbImageUploadPath . $_records->district_image) . '"  height="50" width="50">' : '<img src="' . asset('/uploads/user/thumb/default.png') . '" class="user-image" alt="Default Image" height="50" width="50">');
                 $records["data"][$key]['action'] = "&emsp;<a href='{$edit}' title='Edit District' ><span class='glyphicon glyphicon-edit'></span></a>
+                                                    &emsp;<a href='javascript:;' data-id='" . $_records . "' class='btn-view-district' title='View District' ><span class='glyphicon glyphicon-eye-open'></span></a>
                                                     &emsp;<a href='javascript:;' data-id='" . $_records->id . "' class='btn-delete-district' title='Delete District' ><span class='glyphicon glyphicon-trash'></span></a>";
             }
         }
