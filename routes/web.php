@@ -33,7 +33,6 @@ Route::get('/admin/dashboard','Admin\dashboardController@index');
 Route::get('/admin/blank-land','Admin\blanklandController@index');
 
 // District List In Gujarat
-
 Route::get('/admin/district','Admin\districtController@index');
 Route::get('/admin/add-district','Admin\districtController@addDistrict');
 Route::post('/admin/list-district-ajax', 'Admin\districtController@listDistrictAjax');
@@ -41,5 +40,8 @@ Route::get('/admin/edit-district/{id}', array('as' => 'district.edit', 'uses' =>
 Route::post('/admin/district-save','Admin\districtController@saveDistrict');
 
 // Taluka List In Gujarat 
-
 Route::get('/admin/taluka','Admin\talukaController@index');
+Route::get('/admin/add-taluka','Admin\talukaController@addTaluka');
+Route::post('/admin/list-taluka-ajax', 'Admin\talukaController@listTalukaAjax');
+Route::get('/admin/edit-taluka/{id}', array('as' => 'taluka.edit', 'uses' => 'Admin\talukaController@editTaluka'));
+Route::post('/admin/taluka-save','Admin\talukaController@saveTaluka');

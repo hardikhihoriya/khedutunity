@@ -36,4 +36,17 @@ use SoftDeletes;
     public function scopeSearchByName($query, $value) {
         return $query->Where('district_name', 'LIKE', "%$value%");
     }
+
+    public function DistrictName() {
+        return district::select('*')->get();
+    }
+    
+    public function DistrictId($code){
+        return district::select('id')->where('district_code',$code)->first();
+    }
+    
+    public function getNameDistrict($id){
+        return district::select('district_name')->where('id',$id)->first();
+    }
+
 }

@@ -15,7 +15,7 @@
                     <i class="fa fa-dashboard"></i> <span>User Management</span>                    
                 </a>                
             </li>
-            <li class="{{ (Request::is('admin/district')) ? 'active treeview' : 'treeview' }}">
+            <li class="{{ (Request::is('admin/district')) || Request::is('admin/taluka') || Request::is('admin/add-district') || Request::is('admin/add-taluka') ? 'active treeview' : 'treeview' }}">
                 <a href="{{url('admin/district')}}">
                     <i class="fa fa-diamond"></i>
                     <span>
@@ -24,10 +24,10 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="{{ Request::is('admin/district') ? 'active' : '' }}">
+                    <li class="{{ Request::is('admin/district') || Request::is('admin/add-district') ? 'active' : '' }}">
                         <a href="{{url('admin/district')}}"><i class="fa fa-circle-o"></i> District Management </a>
                     </li>
-                    <li class="{{ Request::is('admin/taluka') ? 'active' : '' }}">
+                    <li class="{{ Request::is('admin/taluka') || Request::is('admin/add-taluka') ? 'active' : '' }}">
                         <a href="{{url('admin/taluka')}}"><i class="fa fa-circle-o"></i> Taluka Management </a>
                     </li>
                 </ul>

@@ -6,7 +6,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
 
-class Tuluka extends Model {
+class taluka extends Model {
 
     use Notifiable;
 
@@ -36,5 +36,5 @@ use SoftDeletes;
     public function scopeSearchByName($query, $value) {
         return $query->Where('taluka_name', 'LIKE', "%$value%");
     }
-
+    
 }

@@ -118,7 +118,7 @@ class districtController extends Controller {
                         }
                         $districtDelete->delete();
                     }
-                    $records["customMessage"] = trans('adminmsg.delete_ads');
+                    $records["customMessage"] = trans('adminmsg.delete_district');
             }
         }
         $columns = array(

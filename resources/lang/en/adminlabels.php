@@ -52,8 +52,23 @@ return [
     /*
      * District Module Lables
      */
-    'district_name_list' => 'District Name List',
-    'districtname' => 'District Name',
-    'distructimage' => 'District Map Image',
-    'distructcode' => 'District RTO Code',
+    'district_name_list'    => 'District Name List',
+    'district'              => 'District',
+    'districtlist'          => 'District List',
+    'districtname'          => 'District Name',
+    'distructimage'         => 'District Map Image',
+    'distructcode'          => 'District RTO Code',
+    'districtmanagement'    => 'District Management',
+    
+    /*
+     * Taluka Module Lables
+     */
+    
+    'talukamanagement'      => 'Taluka Management',
+    'talukalist'            => 'Taluka List',
+    'talukaname'            => 'Taluka Name',
+    'talukaimage'           => 'Taluka Image',
+    'talukadescription'     => 'Taluka Description',
+    'taluka'                => 'Taluka',
+    'districtselect'        => 'District Name Select',
 ];

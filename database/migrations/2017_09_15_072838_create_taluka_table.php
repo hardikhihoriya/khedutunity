@@ -18,7 +18,7 @@ class CreateTalukaTable extends Migration {
             $table->string('district_code', 10);
             $table->tinyInteger('district_id');
             $table->string('taluka_image', 255)->nullable();
-            $table->string('taluka_description', 255)->nullalbe();
+            $table->longText('taluka_description')->nullalbe();
             $table->tinyInteger('status')->comment('0 - Inactive , 1 - Active')->default(1);
             $table->timestamps();
             $table->softDeletes();
