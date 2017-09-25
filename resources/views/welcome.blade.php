@@ -8,8 +8,9 @@
 
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <link rel=icon href="{{ asset('/images/favicon.jpg')}}">
         <!-- Bootstrap  -->
         <link href="{{ asset('/css/front/css/bootstrap.min.css')}}" rel="stylesheet">
 
@@ -38,10 +39,10 @@
             <nav class="collapse navbar-collapse">
                 <!-- Main navigation -->
                 <ul id="headernavigation" class="nav navbar-nav">
-                    <li class="active"><a href="#page-top">Home</a></li>	
+<!--                    <li class="active"><a href="#page-top">Home</a></li>	
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>		
-                    <li><a href="#login">Login</a></li>		
+                    <li><a href="#contact">Contact</a></li>		-->
+                    <!--                    <li><a href="#login">Login</a></li>		-->
                 </ul> <!-- /.nav .navbar-nav -->
             </nav> <!-- /.navbar-collapse  -->
         </div><!-- /#main-menu -->
@@ -49,25 +50,24 @@
 
 
         <!-- Page Top Section -->
-        <section id="page-top" class="section-style" data-background-image="{{ asset('/images/background/page-top.jpg')}}">
+        <section id="page-top" class="section-style" data-background-image="{{ asset('/images/background/DSC_0007.JPG')}}">
             <div class="pattern height-resize">
-                <div class="container">
-                    <h1 class="site-title">
-                        Khedut Unity
-                    </h1><!-- /.site-title -->
-                    <h3 class="section-name">
-                        <span>
-                            We Are
-                        </span>
-                    </h3><!-- /.section-name -->
+                <div class="container">                    
+                    <div class="logoimage">
+                        <img src="{{ asset('/images/logo.png')}}"/>
+                    </div>                    
                     <h3 class="section-title">
                         Coming Soon
                     </h3><!-- /.Section-title  -->
                     <div id="time_countdown" class="time-count-container">
                         <div class="col-sm-12">
-                            <h1 style=" text-align: center; font-size: 115px;">09/09/2017</h1>                            
-                        </div>                        
+                            <h1 style=" text-align: center; font-size: 115px;">01/01/2018</h1>                            
+                        </div>   
+                        <p class="section-description top">
+                            Environment safety and make it green is the urgent need of today. We need to maintain its naturality more than the speed we have destroyed it. Misbalancing the natural cycle of the environment is leading towards the destruction of life on this planet. Therefore, it is very necessary to understand the importance of healthy environment and maintain it forever to continue the life. Slogans on the environment are the best way to encourage people towards saving the environment.
+                        </p>
                     </div><!-- /.time-count-container -->
+
                     <div class="next-section">
                         <a class="go-to-about"><span></span></a>
                     </div><!-- /.next-section -->
@@ -87,8 +87,8 @@
                     <h2 class="section-title">
                         We Are dedicated
                     </h2><!-- /.Section-title  -->
-                    <p class="section-description">
-                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                    <p class="section-description msg">
+                        Go Green Gujarat..........
                     </p><!-- /.section-description -->
                     <div class="team-container">
                         <div class="row">
@@ -100,31 +100,31 @@
                                             <p class="member-name">
                                                 Hardik Hihoriya
                                             </p>
-                                            <p class="designation">
-                                                CEO 
-                                            </p>
+<!--                                            <p class="designation">
+                                               
+                                            </p>-->
                                         </figcaption>
                                     </figure>
                                     <div class="social-btn-container">
                                         <div class="team-socail-btn">
                                             <span class="social-btn-box facebook-btn-container">
-                                                <a href="#" class="facebook-btn">
+                                                <a href="https://www.facebook.com/hihoriya.hardik" target="_blank" class="facebook-btn">
                                                     <i class="fa fa-facebook"></i>
                                                 </a><!-- /.facebook-btn -->
                                             </span><!-- /.social-btn-box -->
                                             <span class="social-btn-box twitter-btn-container">
-                                                <a href="#" class="twitter-btn">
+                                                <a href="https://twitter.com/hardikinexture" target="_blank" class="twitter-btn">
                                                     <i class="fa fa-twitter"></i>
                                                 </a><!-- /.twitter-btn -->
                                             </span><!-- /.social-btn-box -->
                                             <span class="social-btn-box linkedin-btn-container">
-                                                <a href="#" class="linkedin-btn">
+                                                <a href="https://www.linkedin.com/in/hardik-hihoriya-65295932" target="_blank" class="linkedin-btn">
                                                     <i class="fa fa-linkedin"></i>
                                                 </a><!-- /.linkedin-btn -->
                                             </span><!-- /.social-btn-box -->
                                             <span class="social-btn-box github-btn-container">
-                                                <a href="#" class="github-btn">
-                                                    <i class="fa fa-github-alt"></i>
+                                                <a href="https://plus.google.com/u/0/110378805187048801125" target="_blank" class="github-btn">
+                                                    <i class="fa fa-google-plus"></i>
                                                 </a><!-- /.github-btn -->
                                             </span><!-- /.social-btn-box -->
                                         </div><!-- /.team-socail-btn -->
@@ -152,9 +152,9 @@
                     <h2 class="section-title">
                         Get in Touch 
                     </h2><!-- /.Section-title  -->
-                    <p class="section-description">
+<!--                    <p class="section-description">
                         Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                    </p><!-- /.section-description -->
+                    </p> /.section-description -->
 
                     <form id="contact-form" method="post" class="clearfix">
                         <div class="contact-box-hide">
@@ -215,25 +215,6 @@
                 </div>
             </div>
         </section>
-
-        <section id="login" class="section-style" data-background-image="http://khedutunity.localhost.com/images/background/newsletter.jpg" style="background-image: url(&quot;http://khedutunity.localhost.com/images/background/newsletter.jpg&quot;);">
-            <div class="pattern height-resize">
-                <div class="container">
-                    <h3 class="section-name">
-                        <span>
-                            User Related
-                        </span>
-                    </h3>
-                    <h2 class="section-title">
-                        Agriculture 
-                    </h2>
-                    <p class="section-description">
-                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                    </p>
-                </div>
-            </div>
-        </section>
-
 
 
 
