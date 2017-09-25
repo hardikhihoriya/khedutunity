@@ -104,7 +104,6 @@ return [
     */
 
     'key' => env('APP_KEY'),
-
     'cipher' => 'AES-256-CBC',
 
     /*
@@ -121,7 +120,6 @@ return [
     */
 
     'log' => env('APP_LOG', 'single'),
-
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
     /*
@@ -136,7 +134,6 @@ return [
     */
 
     'providers' => [
-
         /*
          * Laravel Framework Service Providers...
          */
@@ -178,9 +175,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         App\Providers\HelperServiceProvider::class,
-        LaravelFCM\FCMServiceProvider::class, 
-        Lucasvdh\LaravelWhatsapp\WhatsappServiceProvider::class,
-
+        LaravelFCM\FCMServiceProvider::class,
     ],
 
     /*
@@ -195,7 +190,6 @@ return [
     */
 
     'aliases' => [
-
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
@@ -233,8 +227,5 @@ return [
         'Helpers'   => App\Helpers\Helpers::class,
         'FCM'      => LaravelFCM\Facades\FCM::class,
 	'FCMGroup' => LaravelFCM\Facades\FCMGroup::class,
-        'Whatsapp' => Lucasvdh\LaravelWhatsapp\Facades\Whatsapp::class,
-
     ],
-
 ];

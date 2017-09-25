@@ -10,7 +10,6 @@ use Illuminate\Validation\Rule;
 use Image;
 use Config;
 use File;
-use Whatsapp;
 
 class UsersController extends Controller
 {
