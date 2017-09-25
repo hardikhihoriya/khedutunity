@@ -39,9 +39,9 @@
             <nav class="collapse navbar-collapse">
                 <!-- Main navigation -->
                 <ul id="headernavigation" class="nav navbar-nav">
-<!--                    <li class="active"><a href="#page-top">Home</a></li>	
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>		-->
+                    <!--                    <li class="active"><a href="#page-top">Home</a></li>	
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#contact">Contact</a></li>		-->
                     <!--                    <li><a href="#login">Login</a></li>		-->
                 </ul> <!-- /.nav .navbar-nav -->
             </nav> <!-- /.navbar-collapse  -->
@@ -50,7 +50,7 @@
 
 
         <!-- Page Top Section -->
-        <section id="page-top" class="section-style" data-background-image="{{ asset('/images/background/DSC_0007.JPG')}}">
+        <section id="page-top" class="section-style" data-background-image="{{ asset('/images/background/wallpapernature.jpg')}}">
             <div class="pattern height-resize">
                 <div class="container">                    
                     <div class="logoimage">
@@ -61,7 +61,7 @@
                     </h3><!-- /.Section-title  -->
                     <div id="time_countdown" class="time-count-container">
                         <div class="col-sm-12">
-                            <h1 style=" text-align: center; font-size: 115px;">01/01/2018</h1>                            
+                            <h1 style="text-align: center;font-size: 115px;color: #ff9b18;">01/01/2018</h1>                            
                         </div>   
                         <p class="section-description top">
                             Environment safety and make it green is the urgent need of today. We need to maintain its naturality more than the speed we have destroyed it. Misbalancing the natural cycle of the environment is leading towards the destruction of life on this planet. Therefore, it is very necessary to understand the importance of healthy environment and maintain it forever to continue the life. Slogans on the environment are the best way to encourage people towards saving the environment.
@@ -134,14 +134,15 @@
                         </div><!-- /.row -->
                     </div><!-- /.team-container -->
                     <div class="next-section">
-                        <a class="go-to-subscribe"><span></span></a>
+                        <a class="go-to-contact"><span></span></a>
                     </div><!-- /.next-section -->
                 </div><!-- /.container -->
             </div><!-- /.pattern -->
         </section><!-- /#about -->
         <!-- About Us Section End -->
+        
         <!-- Contact Section -->
-        <section id="contact" class="section-style" data-background-image="{{ asset('/images/background/contact.jpg')}}">
+        <section id="contact" class="section-style" data-background-image="{{ asset('/images/background/grow_something.JPG')}}">
             <div class="pattern height-resize">
                 <div class="container">
                     <h3 class="section-name">
@@ -229,6 +230,7 @@
         <script type="text/javascript" src="{{ asset('/js/front/js/functions.js')}}"></script>
         <!-- Custom JavaScript Functions -->
         <script type="text/javascript" src="{{ asset('/js/front/js/jquery.ajaxchimp.min.js')}}"></script>
+
 
     </body>
 </html>
