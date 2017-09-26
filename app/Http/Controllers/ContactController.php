@@ -36,7 +36,6 @@ class ContactController extends Controller {
 
     public function listContactAjax() {
         $records = array();
-        //processing custom actions
         if (Input::get('customActionType') == 'groupAction') {
             $action = Input::get('customActionName');
             $idArray = Input::get('id');
