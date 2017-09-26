@@ -92,7 +92,7 @@
                         </span>
                     </h3><!-- /.section-name -->
                     <h2 class="section-title">
-                        We Are dedicated
+                        We Are dedicated to
                     </h2><!-- /.Section-title  -->
                     <p class="section-description msg">
                         <span class="go_title">Go</span> <span class="green_title">Green </span> <span class="gu_title">Gujarat..</span>
