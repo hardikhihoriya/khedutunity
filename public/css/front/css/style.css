@@ -852,7 +852,7 @@ form.news-letter .btn:hover{
     padding-top: 20px;
 }
 .contactmessage{
-  display: block;
+    display: block;
     font-size: 26px;
     margin: 0;
     text-align: center;
@@ -981,6 +981,23 @@ form.news-letter .btn:hover{
     }
     .comingdate{
         font-size: 60px;
+    }
+    .go_title{
+        display: block;
+        font-size: 70px;
+        color: #ffa125;
+        margin: 25px;
+    }
+    .green_title {
+        display: block;
+        font-size: 55px;
+        margin: 30px;
+    }
+    .gu_title {
+        display: block;
+        font-size: 40px;
+        color: rgba(74, 182, 56, 1);
+        font-weight: 900;
     }
     #contact-form #first_name{
         border-right:1px solid #fff;
