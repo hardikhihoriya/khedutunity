@@ -83,7 +83,7 @@
         </section><!-- /#page-top -->
         <!-- Page Top Section  End -->
         <!-- About Us Section -->
-        <section id="about" class="section-style" data-background-image="{{ asset('/images/background/about-us.jpg')}}">
+        <section id="about" class="section-style" data-background-image="{{ asset('/images/background/page-top.jpg')}}">
             <div class="pattern height-resize"> 
                 <div class="container">
                     <h3 class="section-name">
