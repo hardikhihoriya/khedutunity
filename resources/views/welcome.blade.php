@@ -36,7 +36,6 @@
 
     </head>
     <body>
-
         <!-- Main Menu -->
         <div id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -57,8 +56,6 @@
             </nav> <!-- /.navbar-collapse  -->
         </div><!-- /#main-menu -->
         <!-- Main Menu End -->
-
-
         <!-- Page Top Section -->
         <section id="page-top" class="section-style" data-background-image="{{ asset('/images/background/wallpapernature.jpg')}}">
             <div class="pattern height-resize">
@@ -98,7 +95,7 @@
                         We Are dedicated
                     </h2><!-- /.Section-title  -->
                     <p class="section-description msg">
-                        <span class="go_title">Go</span> <span class="green_title">Green </span> <span class="gu_title">Gujarat..........</span>
+                        <span class="go_title">Go</span> <span class="green_title">Green </span> <span class="gu_title">Gujarat..</span>
                     </p><!-- /.section-description -->
                     <div class="team-container">
                         <div class="row">
@@ -147,7 +144,6 @@
             </div><!-- /.pattern -->
         </section><!-- /#about -->
         <!-- About Us Section End -->
-
         <!-- Contact Section -->
         <section id="contact" class="section-style" data-background-image="{{ asset('/images/background/grow_something.jpg')}}">
             <div class="pattern height-resize">
@@ -195,25 +191,19 @@
                 </div>
             </div>
         </section>
-
         <!-- Contact Section End -->
         <!-- jQuery Library -->
         <script type="text/javascript" src="{{ asset('/js/front/js/jquery-2.1.0.min.js')}}"></script>
-        <!-- Modernizr js -->
         <script type="text/javascript" src="{{ asset('/js/front/js/modernizr-2.8.0.min.js')}}"></script>
-        <!-- Plugins -->
         <script type="text/javascript" src="{{ asset('/js/front/js/plugins.js')}}"></script>
-        <!-- Custom JavaScript Functions -->
         <script type="text/javascript" src="{{ asset('/js/front/js/functions.js')}}"></script>
-        <!-- Custom JavaScript Functions -->
         <script type="text/javascript" src="{{ asset('/js/front/js/jquery.ajaxchimp.min.js')}}"></script>
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107045624-1"></script>        
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#contact-form').on('submit', function (e) {
                     e.preventDefault();
-                    var formData = new FormData($(this)[0]);                    
+                    var formData = new FormData($(this)[0]);
                     $.ajax({
                         url: "{{ url('/savecontact') }}",
                         type: "POST",
@@ -225,11 +215,14 @@
                             'X_CSRF_TOKEN': '{{ csrf_field() }}',
                         },
                         success: function (data) {
-                            var obj = jQuery.parseJSON(JSON.stringify(data));                           
-                            if(obj.success){
+                            var obj = jQuery.parseJSON(JSON.stringify(data));
+                            if (obj.success) {
                                 $('#contact-form')[0].reset();
                                 $('#successmsg').html(obj.success);
-                            } else if(obj.error){
+                                setTimeout(function () {
+                                    $("#successmsg").hide();
+                                }, 5000);
+                            } else if (obj.error) {
                                 $('#successmsg').html(obj.error);
                             }
                         }
@@ -237,7 +230,5 @@
                 });
             });
         </script>
-
-
     </body>
 </html>
