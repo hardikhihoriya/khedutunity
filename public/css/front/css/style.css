@@ -676,6 +676,11 @@ a:focus{
     bottom: 220px;
     right: 230px;
 }
+.comingdate{
+    text-align: center;
+    font-size: 115px;
+    color: #ff9b18;
+}
 .team-member .social-btn-container .twitter-btn-container{
     bottom: 220px;
     left: 230px;
@@ -973,6 +978,9 @@ form.news-letter .btn:hover{
 @media screen and (max-width: 768px){
     .section-title{
         font-size:40px;
+    }
+    .comingdate{
+        font-size: 60px;
     }
     #contact-form #first_name{
         border-right:1px solid #fff;

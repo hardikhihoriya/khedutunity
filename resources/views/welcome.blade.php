@@ -40,10 +40,10 @@
         <div id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="navbar-header">
                 <!-- responsive navigation -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<!--                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i>
-                </button> <!-- /.navbar-toggle -->
+                </button>  /.navbar-toggle -->
             </div> <!-- /.navbar-header -->
             <nav class="collapse navbar-collapse">
                 <!-- Main navigation -->
@@ -68,7 +68,7 @@
                     </h3><!-- /.Section-title  -->
                     <div id="time_countdown" class="time-count-container">
                         <div class="col-sm-12">
-                            <h1 style="text-align: center;font-size: 115px;color: #ff9b18;">01/01/2018</h1>                            
+                            <h1 class="comingdate">01/01/2018</h1>                            
                         </div>   
                         <p class="section-description top">
                             Environment safety and make it green is the urgent need of today. We need to maintain its naturality more than the speed we have destroyed it. Misbalancing the natural cycle of the environment is leading towards the destruction of life on this planet. Therefore, it is very necessary to understand the importance of healthy environment and maintain it forever to continue the life. Slogans on the environment are the best way to encourage people towards saving the environment.
