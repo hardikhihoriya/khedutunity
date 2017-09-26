@@ -19,6 +19,11 @@ Route::get('/login', 'HomeController@checkLogin');
 
 Auth::routes();
 
+
+// Contact-us Routes
+
+Route::post('/savecontact', 'ContactController@save');
+
 Route::get('/home', 'UsersController@getUser')->name('home');
 Route::get('/admin/add-user', 'UsersController@addUser');
 Route::post('/admin/saveUser', 'UsersController@saveUser');

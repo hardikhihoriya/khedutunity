@@ -183,7 +183,7 @@ a:focus{
     -ms-border-radius:100%;
     -o-border-radius:100%;
     border-radius:100%;
-     background-color:rgba(0,0,0,.2);
+    background-color:rgba(0,0,0,.2);
     box-shadow: 0 0 1px rgba(255,255,255,.2);
     margin:70px;
     padding-top:45px;
@@ -251,6 +251,24 @@ a:focus{
     margin:15px;
     position:relative;
     overflow:hidden;
+}
+.go_title{
+    display: inline-block;
+    font-size: 70px;
+    color: #ffa125;
+}
+.green_title{
+    display: inline-block;
+    font-size: 55px;
+}
+.gu_title{
+    display: inline-block;
+    font-size: 40px;
+    color: rgba(74, 182, 56, 1);
+    font-weight: 900;
+}
+.section-description.msg{
+    margin-top: 35px;
 }
 .social-btn-container .social-btn-box a{
     color:#fff;
@@ -807,7 +825,7 @@ form.news-letter .btn:hover{
     padding:0;
 }
 #contact-form{
-    margin-top:70px;
+    margin-top:25px;
     margin-bottom:10px;
 }
 #contact-form  input{
@@ -828,8 +846,15 @@ form.news-letter .btn:hover{
     border-top:0px solid transparent;
     padding-top: 20px;
 }
+.contactmessage{
+  display: block;
+    font-size: 26px;
+    margin: 0;
+    text-align: center;
+    color: #fc9f25;  
+}
 #contact-form  .btn{
-    font-size:50px;
+    font-size:25px;
     height:130px;
     border:1px solid #fff;
     border-left:0px solid transparent;

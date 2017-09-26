@@ -23,6 +23,16 @@
         <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.js"></script>
         <![endif]-->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            ;
+            gtag('js', new Date());
+
+            gtag('config', 'UA-107045624-1');
+        </script>
 
     </head>
     <body>
@@ -88,7 +98,7 @@
                         We Are dedicated
                     </h2><!-- /.Section-title  -->
                     <p class="section-description msg">
-                        Go Green Gujarat..........
+                        <span class="go_title">Go</span> <span class="green_title">Green </span> <span class="gu_title">Gujarat..........</span>
                     </p><!-- /.section-description -->
                     <div class="team-container">
                         <div class="row">
@@ -100,9 +110,6 @@
                                             <p class="member-name">
                                                 Hardik Hihoriya
                                             </p>
-<!--                                            <p class="designation">
-                                               
-                                            </p>-->
                                         </figcaption>
                                     </figure>
                                     <div class="social-btn-container">
@@ -140,9 +147,9 @@
             </div><!-- /.pattern -->
         </section><!-- /#about -->
         <!-- About Us Section End -->
-        
+
         <!-- Contact Section -->
-        <section id="contact" class="section-style" data-background-image="{{ asset('/images/background/grow_something.JPG')}}">
+        <section id="contact" class="section-style" data-background-image="{{ asset('/images/background/grow_something.jpg')}}">
             <div class="pattern height-resize">
                 <div class="container">
                     <h3 class="section-name">
@@ -152,12 +159,10 @@
                     </h3><!-- /.section-name -->
                     <h2 class="section-title">
                         Get in Touch 
-                    </h2><!-- /.Section-title  -->
-<!--                    <p class="section-description">
-                        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                    </p> /.section-description -->
-
-                    <form id="contact-form" method="post" class="clearfix">
+                    </h2>
+                    <span id="successmsg" class="contactmessage"></span>
+                    <form id="contact-form" method="post" enctype="multipart/form-data" class="clearfix">                        
+                        {{ csrf_field() }}
                         <div class="contact-box-hide">
                             <div class="col-sm-6">
                                 <input type="text"  class="form-control" id="first_name" name="first_name" required placeholder="First Name">
@@ -180,44 +185,16 @@
                                 <span class="contact-message-error"></span>
                             </div>
                             <div class="col-sm-2">
-                                <button id="contact-submit" class="btn custom-btn col-xs-12" type="submit" name="submit"><i class="fa fa-rocket"></i></button>
-                                <span id="contact-loading" class="btn custom-btn col-xs-12"> <i class="fa fa-refresh fa-spin"></i> </span>
+                                <input type="submit"  class="btn custom-btn col-xs-12" name="submit" value="submit"/>                               
                             </div>
                         </div><!-- /.contact-box-hide -->
-                        <div class="contact-message"></div>
-
-                    </form><!-- /#contact-form -->
-                    <?php
-                    if (isset($_POST['submit'])) {
-                        if ($_POST['fullname'] == '' || $_POST['email'] == '' || $_POST['details'] == '') {
-                            echo "Fill All Fields..";
-                        } else {
-                            $to = "icc@cprindia.org"; // this is your Email address
-                            $from = $_POST['email']; // this is the sender's Email address
-                            $firstName = $_POST['fullname'];
-                            $details = $_POST['details'];
-                            $subject = "Reach out icc feedback";
-                            $subject2 = "Copy of your form submission";
-                            $message = $firstName . " wrote the following:" . "\n\n" . $details;
-                            $message2 = "Here is a copy of your message " . $firstName . "\n\n" . $details;
-
-                            $headers = "From:" . $from;
-                            $headers2 = "From:" . $to;
-                            mail($to, $subject, $message, $headers);
-                            mail($from, $subject2, $message2, $headers2); // sends a copy of the message to the sender
-                            echo "Mail Sent. Thank you " . $firstName . ", we will contact you shortly.";
-                        }
-                    }
-                    ?>
-
+                    </form><!-- /#contact-form -->                    
                     <div class="next-section">
                         <a class="go-to-page-top"><span></span></a>
                     </div>
                 </div>
             </div>
         </section>
-
-
 
         <!-- Contact Section End -->
         <!-- jQuery Library -->
@@ -230,6 +207,36 @@
         <script type="text/javascript" src="{{ asset('/js/front/js/functions.js')}}"></script>
         <!-- Custom JavaScript Functions -->
         <script type="text/javascript" src="{{ asset('/js/front/js/jquery.ajaxchimp.min.js')}}"></script>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107045624-1"></script>        
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#contact-form').on('submit', function (e) {
+                    e.preventDefault();
+                    var formData = new FormData($(this)[0]);                    
+                    $.ajax({
+                        url: "{{ url('/savecontact') }}",
+                        type: "POST",
+                        data: formData,
+                        cache: false,
+                        processData: false, // Don't process the files
+                        contentType: false,
+                        headers: {
+                            'X_CSRF_TOKEN': '{{ csrf_field() }}',
+                        },
+                        success: function (data) {
+                            var obj = jQuery.parseJSON(JSON.stringify(data));                           
+                            if(obj.success){
+                                $('#contact-form')[0].reset();
+                                $('#successmsg').html(obj.success);
+                            } else if(obj.error){
+                                $('#successmsg').html(obj.error);
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
 
 
     </body>
