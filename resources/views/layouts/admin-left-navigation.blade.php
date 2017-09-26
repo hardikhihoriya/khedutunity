@@ -36,6 +36,11 @@
                 <a href="{{url('admin/blank-land')}}">
                     <i class="fa fa-dashboard"></i> <span>Blank Land</span>                    
                 </a>
+            </li>            
+            <li class="{{ (Request::is('Contact') || Request::is('Contact')) ? 'active treeview' : 'treeview' }}">
+                <a href="{{url('Contact')}}">
+                    <i class="fa fa-dashboard"></i> <span>Contact List</span>                    
+                </a>
             </li>
 
         </ul>

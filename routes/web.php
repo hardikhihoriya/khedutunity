@@ -21,7 +21,9 @@ Auth::routes();
 
 
 // Contact-us Routes
-
+Route::get('/Contact','ContactController@index');
+Route::post('/list-contact-ajax', 'ContactController@listContactAjax');
+Route::get('/edit-contact/{id}', array('as' => 'contact.edit', 'uses' => 'ContactController@editContact'));
 Route::post('/savecontact', 'ContactController@save');
 
 Route::get('/home', 'UsersController@getUser')->name('home');

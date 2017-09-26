@@ -71,4 +71,15 @@ return [
     'talukadescription'     => 'Taluka Description',
     'taluka'                => 'Taluka',
     'districtselect'        => 'District Name Select',
+    
+    /*
+     *  Contact Module Lables
+     */
+    'contact_list'         => 'Contact List',
+    'contact'              => 'Contact',
+    'contact_firstname'    => 'First Name',
+    'contact_lastname'     => 'Last Name',
+    'contact_email'        => 'Contact Email',
+    'contact_subject'      => 'Contact Subject',
+    'contact_messge'      => 'Contact Message',
 ];
