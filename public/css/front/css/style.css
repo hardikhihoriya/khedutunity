@@ -113,8 +113,13 @@ a:focus{
     font-weight:300;
     font-size:65px;
 }
+.shadow {
+    text-shadow: -1px 0 #ff9b18, 0 3px #ff9b18, 3px 0 #ff9b18, 0 0px #ff9b18;
+    font-size: 80px;
+    font-weight: 500;
+}
 .section-description{
-    font-weight:300;
+    font-weight:600;
     text-align:center;
     line-height:30px;
 }
@@ -172,36 +177,36 @@ a:focus{
 gallery css
 */
 .gal-container{
-	padding: 12px;
+    padding: 12px;
 }
 .gal-item{
-	overflow: hidden;
-	padding: 3px;
+    overflow: hidden;
+    padding: 3px;
 }
 .gal-item .box{
-	height: 350px;
-	overflow: hidden;
+    height: 350px;
+    overflow: hidden;
 }
 .box img{
-	height: 100%;
-	width: 100%;
-	object-fit:cover;
-	-o-object-fit:cover;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    -o-object-fit:cover;
 }
 .gal-item a:focus{
-	outline: none;
+    outline: none;
 }
 .gal-item a:after{
-	content:"\e003";
-	font-family: 'Glyphicons Halflings';
-	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.75);
-	position: absolute;
-	right: 3px;
-	left: 3px;
-	top: 3px;
-	bottom: 3px;
-	text-align: center;
+    content:"\e003";
+    font-family: 'Glyphicons Halflings';
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: 3px;
+    left: 3px;
+    top: 3px;
+    bottom: 3px;
+    text-align: center;
     line-height: 350px;
     font-size: 30px;
     color: #fff;
@@ -210,13 +215,13 @@ gallery css
     transition: all 0.5s ease-in-out 0s;
 }
 .gal-item a:hover:after{
-	opacity: 1;
+    opacity: 1;
 }
 .modal-open .gal-container .modal{
-	background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.4);
 }
 .modal-open .gal-item .modal-body{
-	padding: 0px;
+    padding: 0px;
 }
 .modal-open .gal-item button.close{
     position: absolute;
@@ -233,34 +238,34 @@ gallery css
     border: 2px solid #fff;
     line-height: 25px;
     -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
-	box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
 }
 .modal-open .gal-item button.close:focus{
-	outline: none;
+    outline: none;
 }
 .modal-open .gal-item button.close span{
-	position: relative;
-	top: -3px;
-	font-weight: lighter;
-	text-shadow:none;
+    position: relative;
+    top: -3px;
+    font-weight: lighter;
+    text-shadow:none;
 }
 .gal-container .modal-dialogue{
-	width: 80%;
+    width: 80%;
 }
 .gal-container .description{
-	position: relative;
-	height: 40px;
-	top: -40px;
-	padding: 10px 25px;
-	background-color: rgba(0,0,0,0.5);
-	color: #fff;
-	text-align: left;
+    position: relative;
+    height: 40px;
+    top: -40px;
+    padding: 10px 25px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: left;
 }
 .gal-container .description h4{
-	margin:0px;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 20px;
+    margin:0px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
 }
 .gal-container .modal.fade .modal-dialog {
     -webkit-transform: scale(0.1);
@@ -284,10 +289,10 @@ gallery css
     opacity: 1;
 }
 @media (min-width: 768px) {
-.gal-container .modal-dialog {
-    width: 55%;
-    margin: 50 auto;
-}
+    .gal-container .modal-dialog {
+        width: 55%;
+        margin: 50 auto;
+    }
 }
 @media (max-width: 768px) {
     .gal-container .modal-content{
@@ -819,6 +824,7 @@ i.red{
     text-align: center;
     font-size: 115px;
     color: #ff9b18;
+    text-shadow: -2px 0 white, 0 2px white, 3px 0 white, 0 -2px white;
 }
 .team-member .social-btn-container .twitter-btn-container{
     bottom: 220px;
@@ -1119,7 +1125,20 @@ form.news-letter .btn:hover{
         font-size:40px;
     }
     .comingdate{
-        font-size: 60px;
+        font-size: 48px;
+    }
+    .comingdate.shadow {
+        font-size: 40px;
+    }
+    .logoimage img {
+        width: 70%;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    .celebrate{
+        font-size: 43px !important;
+        margin: 0 !important;
     }
     .go_title{
         display: block;

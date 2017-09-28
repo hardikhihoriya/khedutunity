@@ -8,6 +8,7 @@
 
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text-html; charset=utf-8">
 
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
         <link rel=icon href="{{ asset('/images/favicon.jpg')}}">
@@ -41,18 +42,18 @@
 
     </head>
     <body>        
-        <section id="page-top" class="section-style" data-background-image="{{ asset('/images/background/wallpapernature.jpg')}}">
+        <section id="page-top" class="section-style" data-background-image="{{ asset('/images/newbackground/image1.jpg')}}">
             <div class="pattern height-resize">
                 <div class="container">                    
                     <div class="logoimage">
                         <img src="{{ asset('/images/logo.png')}}"/>
                     </div>                    
-                    <h3 class="section-title">
+                    <h3 class="section-title shadow">
                         Coming Soon
                     </h3>
                     <div id="time_countdown" class="time-count-container">
                         <div class="col-sm-12">
-                            <h1 class="comingdate">01/01/2018</h1>                            
+                            <h1 class="comingdate shadow">01/01/2018</h1>                            
                         </div>   
                         <p class="section-description top">
                             Environment safety and make it green is the urgent need of today. We need to maintain its naturality more than the speed we have destroyed it. Misbalancing the natural cycle of the environment is leading towards the destruction of life on this planet. Therefore, it is very necessary to understand the importance of healthy environment and maintain it forever to continue the life. Slogans on the environment are the best way to encourage people towards saving the environment.
@@ -74,7 +75,7 @@
                         </span>
                     </h3><!-- /.section-name -->
                     <p class="section-description app msg">
-                        <span class="go_title">Celebrate</span> <span class="green_title">With </span> <span class="gu_title">Nature..</span>
+                        <span class="go_title celebrate">Celebrate</span> <span class="green_title">With </span> <span class="gu_title">Nature..</span>
                     </p><!-- /.section-description -->
                     <div class="row">
                         <div class="col-md-4">
@@ -245,6 +246,32 @@
                                         </div>
                                     </div>
                                 </div>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    Launch demo modal
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-success">success</button>
+                                <button type="button" class="btn btn-warning">Warning</button>
                             </div>
                         </div>                        
                     </div><!-- /.container -->
