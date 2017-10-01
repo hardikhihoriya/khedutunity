@@ -22,8 +22,38 @@ class ContactController extends Controller {
     }
 
     public function save() {
-        $contactData = Input::all();
         $msg = [];
+        $contactData = Input::all();
+        if (!empty($contactData['first_name'])) {
+            if (is_numeric($contactData['first_name'])) {
+                $msg['firstname'] = 'Accept only characters not Numeric value';
+                return $msg;
+            }
+        } else {
+            $msg['firstname'] = 'First Name s Required ';
+            return $msg;
+        }
+        if (!empty($contactData['last_name'])) {
+            if (is_numeric($contactData['last_name'])) {
+                $msg['lastname'] = 'Accept only characters not Numeric value';
+                return $msg;
+            }
+        } else {
+            $msg['lastname'] = 'Last Name is Required ';
+            return $msg;
+        }
+        if(empty($contactData['contact_email'])){
+            $msg['contactemail'] = 'Email Address is Required ';
+            return $msg;
+        }
+        if(empty($contactData['contact_subject'])){
+            $msg['contactsubject'] = 'Subject is Required ';
+            return $msg;
+        }
+        if(empty($contactData['message'])){
+            $msg['messages'] = 'Message is Required ';
+            return $msg;
+        }
         if (!empty($contactData)) {
             $this->objContact->create($contactData);
             $msg['success'] = 'Thank You Very much !.....';
@@ -42,7 +72,7 @@ class ContactController extends Controller {
             switch ($action) {
                 case "delete":
                     foreach ($idArray as $_idArray) {
-                        $districtDelete = Contact::find($_idArray);                        
+                        $districtDelete = Contact::find($_idArray);
                         $districtDelete->delete();
                     }
                     $records["customMessage"] = trans('adminmsg.delete_district');
@@ -82,7 +112,7 @@ class ContactController extends Controller {
         $records["data"] = $records["data"]->take($iDisplayLength)->offset($iDisplayStart)->get();
         if (!empty($records["data"])) {
             foreach ($records["data"] as $key => $_records) {
-                $edit = route('contact.edit', $_records->id);                
+                $edit = route('contact.edit', $_records->id);
                 $records["data"][$key]['action'] = "&emsp;<a href='{$edit}' title='Edit Contact' ><span class='glyphicon glyphicon-edit'></span></a>                                                    
                                                     &emsp;<a href='javascript:;' data-id='" . $_records->id . "' class='btn-delete-district' title='Delete Contact' ><span class='glyphicon glyphicon-trash'></span></a>";
             }

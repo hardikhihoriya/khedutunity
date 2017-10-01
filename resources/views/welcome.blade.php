@@ -336,7 +336,7 @@
                         <div class="contact-box-hide">
                             <div class="col-sm-6">
                                 <input type="text"  class="form-control" id="first_name" name="first_name" required placeholder="First Name">
-                                <span class="first-name-error"></span>
+                                <span class="first-name-error" id="firsterror"></span>
                             </div>
                             <div class="col-sm-6">
                                 <input type="text"  class="form-control" id="last_name" name="last_name" required placeholder="Last Name">
@@ -389,7 +389,43 @@
                             'X_CSRF_TOKEN': '{{ csrf_field() }}',
                         },
                         success: function (data) {
+                            console.log(data);
                             var obj = jQuery.parseJSON(JSON.stringify(data));
+                            if(obj.firstname){
+                                $('.first-name-error').css('display','block');
+                                $('.first-name-error').html(obj.firstname);
+                                setTimeout(function () {
+                                    $(".first-name-error").hide();
+                                }, 10000);
+                            }
+                            if(obj.lastname){
+                                $('.last-name-error').css('display','block');
+                                $('.last-name-error').html(obj.lastname);
+                                setTimeout(function () {
+                                    $(".last-name-error").hide();
+                                }, 10000);
+                            }
+                            if(obj.contactemail){
+                                $('.contact-email-error').css('display','block');
+                                $('.contact-email-error').html(obj.contactemail);
+                                setTimeout(function () {
+                                    $(".contact-email-error").hide();
+                                }, 10000);
+                            }
+                            if(obj.contactsubject){
+                                $('.contact-subject-error').css('display','block');
+                                $('.contact-subject-error').html(obj.contactsubject);
+                                setTimeout(function () {
+                                    $(".contact-subject-error").hide();
+                                }, 10000);
+                            }
+                            if(obj.messages){
+                                $('.contact-message-error').css('display','block');
+                                $('.contact-message-error').html(obj.messages);
+                                setTimeout(function () {
+                                    $(".contact-message-error").hide();
+                                }, 10000);
+                            }
                             if (obj.success) {
                                 $('#contact-form')[0].reset();
                                 $('#successmsg').html(obj.success);

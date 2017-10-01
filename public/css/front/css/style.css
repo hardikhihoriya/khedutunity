@@ -1024,7 +1024,7 @@ form.news-letter .btn:hover{
 .contact-message-error{
     color: #ffffff;
     position: absolute;
-    background: rgba(52, 152, 219,1);
+    background: rgb(255, 155, 24);
     display: none;
     left: 25px;
     top: -30px;
@@ -1043,7 +1043,7 @@ form.news-letter .btn:hover{
     height: 0;
     border-style: solid;
     border-width: 12px;
-    border-color: rgba(52, 152, 219,1) transparent  transparent transparent;
+    border-color: rgb(255, 161, 37) transparent transparent transparent;
     left: 25px;
     bottom: -24px;
 }
