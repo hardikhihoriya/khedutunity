@@ -18,4 +18,10 @@ return [
     'TALUKA_THUMB_IMAGE_UPLOAD_PATH' => 'uploads/taluka/thumb/',
     'TALUKA_THUMB_IMAGE_HEIGHT' => '300',
     'TALUKA_THUMB_IMAGE_WIDTH' => '300',
+    
+    // Birthday Module
+    'BIRTHDAY_ORIGINAL_IMAGE_UPLOAD_PATH' => 'uploads/birthday/original/',
+    'BIRTHDAY_THUMB_IMAGE_UPLOAD_PATH' => 'uploads/birthday/thumb/',
+    'BIRTHDAY_THUMB_IMAGE_HEIGHT' => '300',
+    'BIRTHDAY_THUMB_IMAGE_WIDTH' => '300',
 ];

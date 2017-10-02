@@ -26,6 +26,12 @@ Route::post('/list-contact-ajax', 'ContactController@listContactAjax');
 Route::get('/edit-contact/{id}', array('as' => 'contact.edit', 'uses' => 'ContactController@editContact'));
 Route::post('/savecontact', 'ContactController@save');
 
+// Birthday Routes
+Route::get('/Birthday','BirthdayController@index');
+Route::post('/list-birthday-ajax', 'BirthdayController@listBirthdayAjax');
+Route::get('/edit-birthday/{id}', array('as' => 'Birthday.edit', 'uses' => 'BirthdayController@editBirthday'));
+Route::post('/savebirthday', 'BirthdayController@save');
+
 Route::get('/home', 'UsersController@getUser')->name('home');
 Route::get('/admin/add-user', 'UsersController@addUser');
 Route::post('/admin/saveUser', 'UsersController@saveUser');

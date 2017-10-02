@@ -42,6 +42,11 @@
                     <i class="fa fa-dashboard"></i> <span>Contact List</span>                    
                 </a>
             </li>
+            <li class="{{ (Request::is('Birthday') || Request::is('Birthday')) ? 'active treeview' : 'treeview' }}">
+                <a href="{{url('Birthday')}}">
+                    <i class="fa fa-birthday-cake"></i> <span>Birthday Wishes</span>                    
+                </a>
+            </li>
 
         </ul>
     </section>

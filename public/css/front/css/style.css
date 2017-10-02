@@ -135,6 +135,14 @@ a:focus{
     border-radius: 15px;
     padding: 5px;
 }
+.birth img{
+    width: 10%;
+    background-color: #4a7238;
+}
+input[type=file] {
+    /* display: block; */
+    padding: 18px;
+}
 .logoimage {   
     text-align: center;
 }
@@ -1061,6 +1069,142 @@ form.news-letter .btn:hover{
 }
 
 /* 7 - Contact Section End 
+---------------------------------------------------------------------- */
+
+
+
+/* 7.1 - birthday Section
+---------------------------------------------------------------------- */
+.birth-title{
+    text-shadow: 3px 0px #ff9b18, 0 1px #ff9b18, 1px 0 #ff9b18, 0 1px #ff9b18;
+}
+
+#birthday-form .col-sm-6, 
+#birthday-form .col-sm-10,
+#birthday-form .col-sm-2{
+    padding:0;
+}
+#birthday-form{
+    margin-top:25px;
+    margin-bottom:10px;
+}
+#birthday-form  input{
+    height:60px;
+}
+#birthday-form #firstname{
+    border-right:0px solid transparent;
+    border-bottom:0px solid transparent;
+}
+#birthday-form #lastname{
+    border-bottom:0px solid transparent;
+}
+.calendar.left.single{
+    color: green;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #ffa125;
+    border-color: transparent;
+    color: #fff;
+}
+#birthday-form  #email{
+    border-right:0px solid transparent;
+}
+#birthday-form textarea.form-control{
+    height:130px;
+    border-top:0px solid transparent;
+    padding-top: 20px;
+}
+.birthdaymessage{
+    display: block;
+    font-size: 26px;
+    margin: 0;
+    text-align: center;
+    color: #fc9f25;  
+}
+#birthday-form  .btn{
+    font-size:25px;
+    height:130px;
+    border:1px solid #fff;
+    border-left:0px solid transparent;
+    border-top:0px solid transparent;
+}
+#birthday-form  .btn:hover{
+    color:#ffa125;
+}
+#birthday-form  .col-sm-6,
+#birthday-form  .col-sm-10{
+    position: relative;
+}
+.birthday-firstname-error,
+.birthday-lastname-error,
+.birthday-email-error,
+.birthday-date-error,
+.birthday-image-error,
+.birthday-tagline-error,
+.birthday-address-error,
+.birthday-message-error,
+.birthday-address-error{
+    color: #ffffff;
+    position: absolute;
+    background: rgb(255, 155, 24);
+    display: none;
+    left: 25px;
+    top: -30px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.birthday-firstname-error:after,
+.birthday-lastname-error:after,
+.birthday-email-error:after,
+.birthday-date-error:after,
+.birthday-address-error:after,
+.birthday-image-error:after,
+.birthday-message-error:after,
+.birthday-tagline-error:after,
+.birthday-address-error:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px;
+    border-color: rgb(255, 161, 37) transparent transparent transparent;
+    left: 25px;
+    bottom: -24px;
+}
+#birthday-loading{
+    display: none;
+    cursor: inherit;
+    line-height: 110px;
+}
+#birthday-loading:hover{
+    color: inherit;
+}
+.birthday-message{
+    text-align: center;
+    font-size: 1.125em;
+}
+
+.modal-header{
+    color: green;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.modal-body{
+    color: green;
+    font-style: italic;
+    padding: 5px;
+}
+.logoimage.mode img {
+    width: 24%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0px;
+}
+
+/* 7.1 - birthday Section End 
 ---------------------------------------------------------------------- */
 
 

@@ -21,13 +21,22 @@
         <!-- Custom Styles -->
         <link href="{{ asset('/css/front/css/style.css')}}" rel="stylesheet">
 
+        <script type="text/javascript" src="{{ asset('/js/front/js/jquery-2.1.0.min.js')}}"></script>
         <!-- Plugin CSS -->
         <link rel="stylesheet" href="{{ asset('device-mockups/device-mockups.min.css')}}">
 
+        <link rel="stylesheet" type="text/css" href="{{ asset('/css/front/css/daterangepicker.css')}}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('/css/front/css/bootstrap-datetimepicker.css')}}" />
         <!-- Custom styles for this template -->
         <link href="{{ asset('/css/front/css/new-age.css')}}" rel="stylesheet">
+        <script type="text/javascript">
+$(document).ready(function () {
+    $("#myModal").modal('show');
+});
+        </script>
         <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.js"></script>
+        
         <![endif]-->
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -41,7 +50,30 @@
         </script>
 
     </head>
-    <body>        
+    <body>  
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Site Information</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logoimage mode">
+                            <img src="{{ asset('/images/logo.png')}}"/>
+                        </div> 
+                        <p  class="section-description top">
+                            Let's celebrate your birthday with Khedut Unity! </br>
+                            Khedut Unity will plant one tree on your birthday to your birthday present. </br>
+                            We should Become naturally benevolent Gujarat</br>
+                            <span style=" color: #ffa125; font-size: 35px; line-height: initial;"> #Go #Green #Gujarat </span> </br>
+                            <strong>Khedut Unity likewise give amaze blessings to you.</strong>
+
+                        </p>                       
+                    </div>
+                </div>
+            </div>
+        </div>
         <section id="page-top" class="section-style" data-background-image="{{ asset('/images/newbackground/image1.jpg')}}">
             <div class="pattern height-resize">
                 <div class="container">                    
@@ -58,6 +90,9 @@
                         <p class="section-description top">
                             Environment safety and make it green is the urgent need of today. We need to maintain its naturality more than the speed we have destroyed it. Misbalancing the natural cycle of the environment is leading towards the destruction of life on this planet. Therefore, it is very necessary to understand the importance of healthy environment and maintain it forever to continue the life. Slogans on the environment are the best way to encourage people towards saving the environment.
                         </p>
+<!--                        <a href="#birthday" class="btn btn-warning">Book Birthday</a>
+                        <a href="#birthday" class="btn btn-warning">Coming Soon App</a>
+                        <a href="#birthday" class="btn btn-warning">Contact-Us</a>-->
                     </div>
                     <div class="next-section">
                         <a class="go-to-features"><span></span></a>
@@ -117,7 +152,6 @@
                         <div class="col-md-8">
                             <div class="container-fluid">
                                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingenv">
                                             <h4 class="panel-title">
@@ -250,10 +284,83 @@
                         </div>                        
                     </div><!-- /.container -->
                     <div class="next-section">
-                        <a class="go-to-about"><span></span></a>
+                        <a class="go-to-birthday"><span></span></a>
                     </div><!-- /.next-section -->
                 </div><!-- /.pattern -->
         </section><!-- /#about -->
+
+        <section id="birthday" class="section-style" data-background-image="/images/newbackground/1920.jpg" style="background-image: url(&quot;/images/newbackground/1920.jpg&quot;);">
+            <div class="pattern height-resize">
+                <div class="container">
+                    <h3 class="section-name">
+                        <span>
+                            birthday With Me
+                        </span>                        
+                    </h3>
+                    <p  class="section-description top">
+                        Let's celebrate your birthday with Khedut Unity! </br>
+                        Khedut Unity will plant one tree on your birthday to your birthday present. </br>
+                        We should Become naturally benevolent Gujarat</br>
+                        #Go #Green #Gujarat </br>
+                        <strong>Khedut Unity likewise give amaze blessings to you.</strong>
+
+                    </p>
+                    <!--                    <h2 class="section-title birth-title">
+                                            get the surprise from Khedut Unity
+                                        </h2>-->
+                    <p class="section-description app msg">
+                        <span class="go_title celebrate">Book</span> <span class="green_title">Your </span> <span class="gu_title">Birthday</span>
+                    </p><!-- /.section-description -->
+                    <span id="birthdaymsg" class="contactmessage"></span>
+                    <form id="birthday-form" method="post" enctype="multipart/form-data" class="clearfix">                        
+                        {{ csrf_field() }}
+                        <div class="contact-box-hide">
+                            <div class="col-sm-6">
+                                <input type="text"  class="form-control" id="lastname" name="firstname" required placeholder="Enter Your First Name">
+                                <span class="birthday-firstname-error" id="firsterror"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text"  class="form-control" id="lastname" name="lastname" required placeholder="Enter Your Last Name">
+                                <span class="birthday-lastname-error"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control"  id="birthday_email" name="birthday_email" required placeholder="Enter Your Email Address">
+                                <span class="birthday-email-error"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="birthdate" id="birthdate" required />
+                                <span class="birthday-date-error"></span>
+                            </div>
+                            <div class="col-sm-6">                                 
+                                <input type="file" name="birthdayImage" id="birthdayImage" required>
+                                <span class="birthday-image-error"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="tagline" id="tagline" placeholder="Enter Your Your Slogan" required />
+                                <span class="birthday-tagline-error"></span>
+                            </div>
+                            <div class="col-sm-15">
+                                <input type="text" class="form-control" name="address" id="address" placeholder="Enter Your Current Address" required />
+                                <span class="birthday-address-error"></span>
+                            </div>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="5" id="message" name="message" required placeholder="Birthday Message Your Colleague"></textarea>
+                                <span class="birthday-message-error"></span>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="submit"  class="btn custom-btn col-xs-12" name="submit" value="Apply"/>                               
+                            </div>
+                        </div><!-- /.contact-box-hide -->
+                    </form><!-- /#contact-form -->                   
+                </div>
+                <div class="logoimage birth">
+                    <img src="/images/newbackground/birthdayone.gif">
+                </div>               
+                <div class="next-section">
+                    <a class="go-to-about"><span></span></a>
+                </div><!-- /.next-section -->
+            </div>
+        </section>
 
 
         <!-- About Us Section -->
@@ -367,12 +474,46 @@
         </section>
         <!-- Contact Section End -->
         <!-- jQuery Library -->
-        <script type="text/javascript" src="{{ asset('/js/front/js/jquery-2.1.0.min.js')}}"></script>
+
         <script type="text/javascript" src="{{ asset('/js/front/js/modernizr-2.8.0.min.js')}}"></script>
         <script type="text/javascript" src="{{ asset('/js/front/js/plugins.js')}}"></script>
         <script type="text/javascript" src="{{ asset('/js/front/js/functions.js')}}"></script>
         <script type="text/javascript" src="{{ asset('/js/front/js/jquery.ajaxchimp.min.js')}}"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107045624-1"></script>        
+        <script type="text/javascript" src="{{ asset('/js/front/js/moment.min.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('/js/front/js/daterangepicker.js')}}"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107045624-1"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#birthday-form').on('submit', function (e) {
+                    e.preventDefault();
+                    var BirthdayData = new FormData($(this)[0]);
+                    $.ajax({
+                        url: "{{ url('/savebirthday') }}",
+                        type: "POST",
+                        data: BirthdayData,
+                        cache: false,
+                        processData: false, // Don't process the files
+                        contentType: false,
+                        headers: {
+                            'X_CSRF_TOKEN': '{{ csrf_field() }}',
+                        },
+                        success: function (data) {
+                            var obj = jQuery.parseJSON(JSON.stringify(data));
+                            if (obj.success) {
+                                $('#birthday-form')[0].reset();
+                                $('#birthdaymsg').html(obj.success);
+                                setTimeout(function () {
+                                    $("#birthdaymsg").hide();
+                                }, 5000);
+                            } else if (obj.error) {
+                                $('#birthdaymsg').html(obj.error);
+                            }
+                        }
+                    });
+                });
+            });
+        </script>        
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#contact-form').on('submit', function (e) {
@@ -391,36 +532,36 @@
                         success: function (data) {
                             console.log(data);
                             var obj = jQuery.parseJSON(JSON.stringify(data));
-                            if(obj.firstname){
-                                $('.first-name-error').css('display','block');
+                            if (obj.firstname) {
+                                $('.first-name-error').css('display', 'block');
                                 $('.first-name-error').html(obj.firstname);
                                 setTimeout(function () {
                                     $(".first-name-error").hide();
                                 }, 10000);
                             }
-                            if(obj.lastname){
-                                $('.last-name-error').css('display','block');
+                            if (obj.lastname) {
+                                $('.last-name-error').css('display', 'block');
                                 $('.last-name-error').html(obj.lastname);
                                 setTimeout(function () {
                                     $(".last-name-error").hide();
                                 }, 10000);
                             }
-                            if(obj.contactemail){
-                                $('.contact-email-error').css('display','block');
+                            if (obj.contactemail) {
+                                $('.contact-email-error').css('display', 'block');
                                 $('.contact-email-error').html(obj.contactemail);
                                 setTimeout(function () {
                                     $(".contact-email-error").hide();
                                 }, 10000);
                             }
-                            if(obj.contactsubject){
-                                $('.contact-subject-error').css('display','block');
+                            if (obj.contactsubject) {
+                                $('.contact-subject-error').css('display', 'block');
                                 $('.contact-subject-error').html(obj.contactsubject);
                                 setTimeout(function () {
                                     $(".contact-subject-error").hide();
                                 }, 10000);
                             }
-                            if(obj.messages){
-                                $('.contact-message-error').css('display','block');
+                            if (obj.messages) {
+                                $('.contact-message-error').css('display', 'block');
                                 $('.contact-message-error').html(obj.messages);
                                 setTimeout(function () {
                                     $(".contact-message-error").hide();
@@ -440,7 +581,6 @@
                 });
             });
 
-
             function toggleIcon(e) {
                 $(e.target)
                         .prev('.panel-heading')
@@ -449,6 +589,19 @@
             }
             $('.panel-group').on('hidden.bs.collapse', toggleIcon);
             $('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $('input[name="birthdate"]').daterangepicker({
+                    singleDatePicker: true,
+                    showDropdowns: true,
+                    yearRange: '1950:' + new Date().getFullYear().toString()
+                },
+                        function (start, end, label) {
+                            var years = moment().diff(start, 'years');
+                        });
+            });
         </script>
     </body>
 </html>
