@@ -63,13 +63,12 @@ $(document).ready(function () {
                             <img src="{{ asset('/images/logo.png')}}"/>
                         </div> 
                         <p  class="section-description top">
-                            Let's celebrate your birthday with Khedut Unity! </br>
-                            Celebrate your birthday with nature! <br>
+                            Let's celebrate your birthday with Khedut Unity! </br>                           
                             Khedut Unity will plant one tree on your birthday to your birthday present. </br>
                             We should Become naturally benevolent Gujarat</br>
                             <span style=" color: #ffa125; font-size: 35px; line-height: initial;"> #Go #Green #Gujarat </span> </br>
-                            <strong>Khedut Unity likewise gives amaze blessings to you.</strong>
-
+                            <strong>Khedut Unity likewise gives amaze blessings to you.</strong><br>
+                            <span style=" color: #744c25;">"Celebrate your birthday with nature!"</span>
                         </p>                       
                     </div>
                 </div>
@@ -299,13 +298,12 @@ $(document).ready(function () {
                         </span>                        
                     </h3>
                     <p  class="section-description top">
-                        Let's celebrate your birthday with Khedut Unity! </br>
-                        Celebrate your birthday with nature! </br>
+                        Let's celebrate your birthday with Khedut Unity! </br>                        
                         Khedut Unity will plant one tree on your birthday to your birthday present. </br>
                         We should Become naturally benevolent Gujarat</br>
                         #Go #Green #Gujarat </br>
-                        <strong>Khedut Unity likewise give amaze blessings to you.</strong>
-
+                        <strong>Khedut Unity likewise gives amaze blessings to you.</strong> </br>
+                        "Celebrate your birthday with nature!"
                     </p>
                     <!--                    <h2 class="section-title birth-title">
                                             get the surprise from Khedut Unity
