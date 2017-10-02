@@ -11,7 +11,7 @@
         <meta http-equiv="content-type" content="text-html; charset=utf-8">
 
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <link rel=icon href="{{ asset('/images/favicon.jpg')}}">
+        <link rel=icon href="{{ asset('/images/favicon.png')}}">
         <!-- Bootstrap  -->
         <link href="{{ asset('/css/front/css/bootstrap.min.css')}}" rel="stylesheet">
 
