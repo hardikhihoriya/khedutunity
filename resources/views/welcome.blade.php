@@ -56,7 +56,7 @@ $(document).ready(function () {
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Site Information</h4>
+                        <h2 class="modal-title">Information</h2>
                     </div>
                     <div class="modal-body">
                         <div class="logoimage mode">
@@ -64,10 +64,11 @@ $(document).ready(function () {
                         </div> 
                         <p  class="section-description top">
                             Let's celebrate your birthday with Khedut Unity! </br>
+                            Celebrate your birthday with nature! <br>
                             Khedut Unity will plant one tree on your birthday to your birthday present. </br>
                             We should Become naturally benevolent Gujarat</br>
                             <span style=" color: #ffa125; font-size: 35px; line-height: initial;"> #Go #Green #Gujarat </span> </br>
-                            <strong>Khedut Unity likewise give amaze blessings to you.</strong>
+                            <strong>Khedut Unity likewise gives amaze blessings to you.</strong>
 
                         </p>                       
                     </div>
@@ -299,6 +300,7 @@ $(document).ready(function () {
                     </h3>
                     <p  class="section-description top">
                         Let's celebrate your birthday with Khedut Unity! </br>
+                        Celebrate your birthday with nature! </br>
                         Khedut Unity will plant one tree on your birthday to your birthday present. </br>
                         We should Become naturally benevolent Gujarat</br>
                         #Go #Green #Gujarat </br>
