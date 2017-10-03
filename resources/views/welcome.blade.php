@@ -383,7 +383,7 @@ $(document).ready(function () {
                             <div class="col-sm-12">
                                 <div class="team-member">
                                     <figure>
-                                        <img src="{{ asset('/images/team/Hardik_Hihoriya.jpg')}}" alt="Team Member">
+                                        <img src="{{ asset('/images/team/Hardik_Hihoriya.jpg')}}" alt="Team Member"  >
                                         <figcaption>
                                             <p class="member-name">
                                                 Hardik Hihoriya
