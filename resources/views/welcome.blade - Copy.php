@@ -83,15 +83,6 @@ $(document).ready(function () {
                     <h3 class="section-title shadow">
                         Coming Soon
                     </h3>
-                    <div class="social-links">
-<!--                        <p class="section-description ">Khedutunity Social</p>-->
-                        <ul class="list-inline">
-                            <li><a href="https://www.facebook.com/KhedutUnity" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/KhedutUnity" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>                            
-                            <li><a href="https://plus.google.com/u/1/112667421578100531689" class="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/khedutunity" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>                    
                     <div id="time_countdown" class="time-count-container">
                         <div class="col-sm-12">
                             <h1 class="comingdate shadow">01/01/2018</h1>                            
@@ -99,9 +90,9 @@ $(document).ready(function () {
                         <p class="section-description top">
                             Environment safety and make it green is the urgent need of today. We need to maintain its naturality more than the speed we have destroyed it. Misbalancing the natural cycle of the environment is leading towards the destruction of life on this planet. Therefore, it is very necessary to understand the importance of healthy environment and maintain it forever to continue the life. Slogans on the environment are the best way to encourage people towards saving the environment.
                         </p>
-                        <!--                        <a href="#birthday" class="btn btn-warning">Book Birthday</a>
-                                                <a href="#birthday" class="btn btn-warning">Coming Soon App</a>
-                                                <a href="#birthday" class="btn btn-warning">Contact-Us</a>-->
+<!--                        <a href="#birthday" class="btn btn-warning">Book Birthday</a>
+                        <a href="#birthday" class="btn btn-warning">Coming Soon App</a>
+                        <a href="#birthday" class="btn btn-warning">Contact-Us</a>-->
                     </div>
                     <div class="next-section">
                         <a class="go-to-features"><span></span></a>
@@ -345,7 +336,7 @@ $(document).ready(function () {
                                 <span class="birthday-image-error"></span>
                             </div>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" name="tagline" id="tagline" placeholder="Enter Your Your Slogan" />
+                                <input type="text" class="form-control" name="tagline" id="tagline" placeholder="Enter Your Your Slogan" required />
                                 <span class="birthday-tagline-error"></span>
                             </div>
                             <div class="col-sm-15">
@@ -353,7 +344,7 @@ $(document).ready(function () {
                                 <span class="birthday-address-error"></span>
                             </div>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="5" id="message" name="message" placeholder="Your Message"></textarea>
+                                <textarea class="form-control" rows="5" id="message" name="message" required placeholder="Birthday Message Your Colleague"></textarea>
                                 <span class="birthday-message-error"></span>
                             </div>
                             <div class="col-sm-2">

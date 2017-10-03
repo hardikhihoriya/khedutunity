@@ -129,6 +129,92 @@ a:focus{
 .top {
     font-size: 20px;
 }
+.list-inline{
+    text-align: center;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+}
+.social-links .list-inline > li {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+a.facebook:hover{
+    border-radius: 100px;
+    background-color: #3b5998;
+    color: #ffffff;
+}
+.social-links li a.facebook {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 45px;
+    padding-top: 16px;
+    padding-left: 5px;
+    height: 72px;
+    line-height: 39px;
+    text-align: center;
+    transform: rotate(45deg);
+    width: 70px;
+}
+a.twitter:hover{
+    border-radius: 100px;
+    background-color: #1dcaff;
+    color: #ffffff;
+}
+.social-links li a.twitter {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 45px;
+    padding-top: 16px;
+    padding-left: 5px;
+    height: 72px;
+    line-height: 39px;
+    text-align: center;
+    transform: rotate(45deg);
+    width: 70px;
+}
+a.google-plus:hover{
+    border-radius: 100px;
+    background-color: #d34836;
+    color: #ffffff;
+}
+.social-links li a.google-plus {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 45px;
+    padding-top: 16px;
+    padding-left: 5px;
+    height: 72px;
+    line-height: 39px;
+    text-align: center;
+    transform: rotate(45deg);
+    width: 70px;
+}
+a.linkedin:hover{
+    border-radius: 100px;
+    background-color: #0e76a8;
+    color: #ffffff;
+}
+.social-links li a.linkedin {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 45px;
+    padding-top: 16px;
+    padding-left: 0;
+    height: 72px;
+    line-height: 39px;
+    text-align: center;
+    transform: rotate(45deg);
+    width: 70px;
+}
+.social-links li a i {
+    transform: rotate(-45deg);
+}
+a, a > * {
+    cursor: pointer;
+    outline: medium none;
+    text-decoration: none;
+}
 .logoimage img{
     width: 20%;
     background-color: #fff;
