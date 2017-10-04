@@ -20,6 +20,7 @@
 
         <!-- Custom Styles -->
         <link href="{{ asset('/css/front/css/style.css')}}" rel="stylesheet">
+        <link href="{{ asset('/css/front/css/fonts.css')}}" rel="stylesheet">
 
         <script type="text/javascript" src="{{ asset('/js/front/js/jquery-2.1.0.min.js')}}"></script>
         <!-- Plugin CSS -->
@@ -345,7 +346,7 @@ $(document).ready(function () {
                                 <span class="birthday-image-error"></span>
                             </div>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" name="tagline" id="tagline" placeholder="Enter Your Your Slogan" />
+                                <input type="text" class="form-control" name="tagline" id="tagline" placeholder="Enter Your Slogan" />
                                 <span class="birthday-tagline-error"></span>
                             </div>
                             <div class="col-sm-15">
@@ -434,6 +435,103 @@ $(document).ready(function () {
             </div><!-- /.pattern -->
         </section><!-- /#about -->
         <!-- About Us Section End -->
+
+        <section id="testimonial" class="section-style testimonial-section" data-background-image="/images/newbackground/testi-section-bg.jpg" style="background-image: url(&quot;/images/newbackground/testi-section-bg.jpg&quot;);">
+            <div class="pattern height-resize">
+                <div class="container">                
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+                                    <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+                                    <li data-target="#testimonial-carousel" data-slide-to="3"></li>
+                                    <li data-target="#testimonial-carousel" data-slide-to="4"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <div class="testimonials text-center">
+                                            <div class="testimonial-img">
+                                                <img alt="" src="/images/social_photos/bhavdip.jpg">
+                                            </div>
+                                            <div class="testimonial-details">
+                                                <i class="icon-testimonial"></i>
+                                                <h4>Bhavdip Pambhar</h4>                                            
+                                                <p>
+                                                    "Awesome Work Dude! It's truly astounding work you and your group doing. #GoGreenGujarat"
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonials text-center">
+                                            <div class="testimonial-img">
+                                                <img alt="" src="/images/social_photos/parth.jpg">
+                                            </div>
+                                            <div class="testimonial-details">
+                                                <i class="icon-testimonial"></i>
+                                                <h4>Parth Bhadaja</h4>                                            
+                                                <p>
+                                                    "It's very nice phenomenal idea really thankful and really needed in India"
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonials text-center">
+                                            <div class="testimonial-img">
+                                                <img alt="" src="/images/social_photos/apurv.jpg">
+                                            </div>
+                                            <div class="testimonial-details">
+                                                <i class="icon-testimonial"></i>
+                                                <h4>Apurv Prajapati</h4>                                            
+                                                <p>
+                                                    "Dude great solution to prevent Global Warming. Because We, the citizens of our nation and of our Earth, are endowed with certain rights, powers, and obligations, which demand we act both individually and collectively to protect and preserve the ongoing evolution of life on Earth, including our future generations."
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonials text-center">
+                                            <div class="testimonial-img">
+                                                <img alt="" src="/images/social_photos/Nirav.jpg">
+                                            </div>
+                                            <div class="testimonial-details">
+                                                <i class="icon-testimonial"></i>
+                                                <h4>Nirav Parmar</h4>
+                                                <p>
+                                                    "Your work should have been meaningful. Nature does good things to the human brain - it makes us healthier, happier and smarter.
+                                                    #GoGreen #SaveNature"
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonials text-center">
+                                            <div class="testimonial-img">
+                                                <img alt="" src="/images/social_photos/ronak.jpg">
+                                            </div>
+                                            <div class="testimonial-details">
+                                                <i class="icon-testimonial"></i>
+                                                <h4>Ronak Panchal</h4>
+                                                <p>
+                                                    "Tremendous initiative Mr. Hihoriya... Good going keep it up...!!!"
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                           
+                            </div>                        
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="section-style" data-background-image="{{ asset('/images/background/grow_something.jpg')}}">
             <div class="pattern height-resize">
@@ -482,6 +580,47 @@ $(document).ready(function () {
             </div>
         </section>
         <!-- Contact Section End -->
+
+        <footer class="footer-section" >
+            <div class="pattern height-resize">
+                <div class="container">
+                    <div class="row">                   
+                        <div class="col-md-4">
+                            <div class="single-address">
+                                <i class="icon-map"></i>
+                                <h3>Khedut Unity Address</h3>
+                                <address>
+                                    <p>B-52 Patanjali society,</p>
+                                    <p>Gayatri School Near-Khodiyanagar</p>
+                                    <p>Bapunagar Ahmedabad</p>
+                                    <p>Gujarat 382350 India</p>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-address">
+                                <i class="icon-clock"></i>
+                                <h3>Office Hours</h3>
+                                <address>
+                                    <p>Monday to Sunday</p>
+                                    <p>9.00 am to 10.00 pm</p>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-address">
+                                <i class="icon-call"></i>
+                                <h3>Phone &amp; E-mail</h3>
+                                <address>
+                                    <p>+91 8866247441</p>
+                                    <p>khedut.unity@gmail.com</p>
+                                </address>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- jQuery Library -->
 
         <script type="text/javascript" src="{{ asset('/js/front/js/modernizr-2.8.0.min.js')}}"></script>

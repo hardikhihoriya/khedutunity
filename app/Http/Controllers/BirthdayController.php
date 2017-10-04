@@ -124,7 +124,7 @@ class BirthdayController extends Controller {
         if (!empty($records["data"])) {
             foreach ($records["data"] as $key => $_records) {
                 $edit = route('Birthday.edit', $_records->id);
-                 $records["data"][$key]['birthdayImage'] = ($_records->birthdayImage != '' && File::exists(public_path($this->birthdayThumbImageUploadPath . $_records->birthdayImage)) ? '<img src="' . url($this->birthdayThumbImageUploadPath . $_records->birthdayImage) . '"  height="50" width="50">' : '<img src="' . asset('/uploads/user/thumb/default.png') . '" class="user-image" alt="Default Image" height="50" width="50">');
+                $records["data"][$key]['birthdayImage'] = ($_records->birthdayImage != '' && File::exists(public_path($this->birthdayThumbImageUploadPath . $_records->birthdayImage)) ? '<img src="' . url($this->birthdayThumbImageUploadPath . $_records->birthdayImage) . '"  height="50" width="50">' : '<img src="' . asset('/uploads/user/thumb/default.png') . '" class="user-image" alt="Default Image" height="50" width="50">');
                 $records["data"][$key]['action'] = "&emsp;<a href='{$edit}' title='Edit Birthday' ><span class='glyphicon glyphicon-edit'></span></a>                                                    
                                                     &emsp;<a href='javascript:;' data-id='" . $_records->id . "' class='btn-delete-birthday' title='Delete Birthday' ><span class='glyphicon glyphicon-trash'></span></a>";
             }
