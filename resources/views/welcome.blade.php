@@ -459,7 +459,6 @@ $(document).ready(function () {
                                                 <img alt="" src="/images/social_photos/bhavdip.jpg">
                                             </div>
                                             <div class="testimonial-details">
-                                                <i class="icon-testimonial"></i>
                                                 <h4>Bhavdip Pambhar</h4>                                            
                                                 <p>
                                                     "Awesome Work Dude! It's truly astounding work you and your group doing. #GoGreenGujarat"
@@ -473,7 +472,6 @@ $(document).ready(function () {
                                                 <img alt="" src="/images/social_photos/parth.jpg">
                                             </div>
                                             <div class="testimonial-details">
-                                                <i class="icon-testimonial"></i>
                                                 <h4>Parth Bhadaja</h4>                                            
                                                 <p>
                                                     "It's very nice phenomenal idea really thankful and really needed in India"
@@ -487,7 +485,6 @@ $(document).ready(function () {
                                                 <img alt="" src="/images/social_photos/apurv.jpg">
                                             </div>
                                             <div class="testimonial-details">
-                                                <i class="icon-testimonial"></i>
                                                 <h4>Apurv Prajapati</h4>                                            
                                                 <p>
                                                     "Dude great solution to prevent Global Warming. Because We, the citizens of our nation and of our Earth, are endowed with certain rights, powers, and obligations, which demand we act both individually and collectively to protect and preserve the ongoing evolution of life on Earth, including our future generations."
@@ -501,7 +498,6 @@ $(document).ready(function () {
                                                 <img alt="" src="/images/social_photos/Nirav.jpg">
                                             </div>
                                             <div class="testimonial-details">
-                                                <i class="icon-testimonial"></i>
                                                 <h4>Nirav Parmar</h4>
                                                 <p>
                                                     "Your work should have been meaningful. Nature does good things to the human brain - it makes us healthier, happier and smarter.
@@ -516,7 +512,6 @@ $(document).ready(function () {
                                                 <img alt="" src="/images/social_photos/ronak.jpg">
                                             </div>
                                             <div class="testimonial-details">
-                                                <i class="icon-testimonial"></i>
                                                 <h4>Ronak Panchal</h4>
                                                 <p>
                                                     "Tremendous initiative Mr. Hihoriya... Good going keep it up...!!!"
