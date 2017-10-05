@@ -5,39 +5,32 @@
         <title>	Khedut Unity Coming Soon </title>
         <meta name="description" content="Khedut Unity Coming Soon" >
         <meta name="author" content="Hardik Hihoriya">
-
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="content-type" content="text-html; charset=utf-8">
-
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
         <link rel=icon href="{{ asset('/images/favicon.png')}}">
         <!-- Bootstrap  -->
         <link href="{{ asset('/css/front/css/bootstrap.min.css')}}" rel="stylesheet">
-
         <!-- icon fonts font Awesome -->
-        <link href="{{ asset('/css/front/css/font-awesome.min.css')}}" rel="stylesheet">        
-
+        <link href="{{ asset('/css/front/css/font-awesome.min.css')}}" rel="stylesheet">
         <!-- Custom Styles -->
         <link href="{{ asset('/css/front/css/style.css')}}" rel="stylesheet">
         <link href="{{ asset('/css/front/css/fonts.css')}}" rel="stylesheet">
-
         <script type="text/javascript" src="{{ asset('/js/front/js/jquery-2.1.0.min.js')}}"></script>
         <!-- Plugin CSS -->
         <link rel="stylesheet" href="{{ asset('device-mockups/device-mockups.min.css')}}">
-
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/front/css/daterangepicker.css')}}" />
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/front/css/bootstrap-datetimepicker.css')}}" />
         <!-- Custom styles for this template -->
         <link href="{{ asset('/css/front/css/new-age.css')}}" rel="stylesheet">
         <script type="text/javascript">
-$(document).ready(function () {
-    $("#myModal").modal('show');
-});
+            $(document).ready(function () {
+                $("#myModal").modal('show');
+            });
         </script>
         <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv.js"></script>
-        
+        <script src="assets/js/html5shiv.js"></script>        
         <![endif]-->
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -49,7 +42,6 @@ $(document).ready(function () {
 
             gtag('config', 'UA-107045624-1');
         </script>
-
     </head>
     <body>  
         <div id="myModal" class="modal fade" role="dialog">
@@ -85,7 +77,6 @@ $(document).ready(function () {
                         Coming Soon
                     </h3>
                     <div class="social-links">
-<!--                        <p class="section-description ">Khedutunity Social</p>-->
                         <ul class="list-inline">
                             <li><a href="https://www.facebook.com/KhedutUnity" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="https://twitter.com/KhedutUnity" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>                            
@@ -100,9 +91,6 @@ $(document).ready(function () {
                         <p class="section-description top">
                             Environment safety and make it green is the urgent need of today. We need to maintain its naturality more than the speed we have destroyed it. Misbalancing the natural cycle of the environment is leading towards the destruction of life on this planet. Therefore, it is very necessary to understand the importance of healthy environment and maintain it forever to continue the life. Slogans on the environment are the best way to encourage people towards saving the environment.
                         </p>
-                        <!--                        <a href="#birthday" class="btn btn-warning">Book Birthday</a>
-                                                <a href="#birthday" class="btn btn-warning">Coming Soon App</a>
-                                                <a href="#birthday" class="btn btn-warning">Contact-Us</a>-->
                     </div>
                     <div class="next-section">
                         <a class="go-to-features"><span></span></a>
@@ -152,8 +140,7 @@ $(document).ready(function () {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="button">
-                                            <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                        <div class="button">                                            
                                         </div>
                                     </div>
                                 </div>
@@ -292,15 +279,14 @@ $(document).ready(function () {
                                 </div>                               
                             </div>
                         </div>                        
-                    </div><!-- /.container -->
+                    </div>
                     <div class="next-section">
                         <a class="go-to-birthday"><span></span></a>
-                    </div><!-- /.next-section -->
-                </div><!-- /.pattern -->
-        </section><!-- /#about -->
-
+                    </div>
+                </div>
+        </section>
         <section id="birthday" class="section-style" data-background-image="/images/newbackground/1920.jpg" style="background-image: url(&quot;/images/newbackground/1920.jpg&quot;);">
-            <div class="pattern height-resize">
+            <div class="pattern height-resize">                
                 <div class="container">
                     <h3 class="section-name">
                         <span>
@@ -315,13 +301,13 @@ $(document).ready(function () {
                         <strong>Khedut Unity likewise gives amaze blessings to you.</strong> </br>
                         "Celebrate your birthday with nature!"
                     </p>
-                    <!--                    <h2 class="section-title birth-title">
-                                            get the surprise from Khedut Unity
-                                        </h2>-->
                     <p class="section-description app msg">
                         <span class="go_title celebrate">Book</span> <span class="green_title">Your </span> <span class="gu_title">Birthday</span>
-                    </p><!-- /.section-description -->
+                    </p>
                     <span id="birthdaymsg" class="contactmessage"></span>
+<!--                    <div id='loadingmessage' style='display:none'>
+                        <img src='/images/newbackground/giphy.gif'/>
+                    </div>-->
                     <form id="birthday-form" method="post" enctype="multipart/form-data" class="clearfix">                        
                         {{ csrf_field() }}
                         <div class="contact-box-hide">
@@ -360,19 +346,17 @@ $(document).ready(function () {
                             <div class="col-sm-2">
                                 <input type="submit"  class="btn custom-btn col-xs-12" name="submit" value="Apply"/>                               
                             </div>
-                        </div><!-- /.contact-box-hide -->
-                    </form><!-- /#contact-form -->                   
+                        </div>
+                    </form>
                 </div>
                 <div class="logoimage birth">
                     <img src="/images/newbackground/birthdayone.gif">
                 </div>               
                 <div class="next-section">
                     <a class="go-to-about"><span></span></a>
-                </div><!-- /.next-section -->
+                </div>
             </div>
         </section>
-
-
         <!-- About Us Section -->
         <section id="about" class="section-style" data-background-image="{{ asset('/images/background/page-top.jpg')}}">
             <div class="pattern height-resize"> 
@@ -381,13 +365,13 @@ $(document).ready(function () {
                         <span>
                             About Us
                         </span>
-                    </h3><!-- /.section-name -->
+                    </h3>
                     <h2 class="section-title">
                         We Are dedicated to
-                    </h2><!-- /.Section-title  -->
+                    </h2>
                     <p class="section-description msg">
                         <span class="go_title">Go</span> <span class="green_title">Green </span> <span class="gu_title">Gujarat..</span>
-                    </p><!-- /.section-description -->
+                    </p>
                     <div class="team-container">
                         <div class="row">
                             <div class="col-sm-12">
@@ -421,21 +405,19 @@ $(document).ready(function () {
                                                 <a href="https://plus.google.com/u/0/110378805187048801125" target="_blank" class="github-btn">
                                                     <i class="fa fa-google-plus"></i>
                                                 </a><!-- /.github-btn -->
-                                            </span><!-- /.social-btn-box -->
-                                        </div><!-- /.team-socail-btn -->
-                                    </div><!-- /.social-btn-container -->
-                                </div><!-- /.team-member -->
-                            </div><!-- /.col-sm-4 -->
-                        </div><!-- /.row -->
-                    </div><!-- /.team-container -->
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="next-section">
                         <a class="go-to-contact"><span></span></a>
-                    </div><!-- /.next-section -->
-                </div><!-- /.container -->
-            </div><!-- /.pattern -->
-        </section><!-- /#about -->
-        <!-- About Us Section End -->
-
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="testimonial" class="section-style testimonial-section" data-background-image="/images/newbackground/testi-section-bg.jpg" style="background-image: url(&quot;/images/newbackground/testi-section-bg.jpg&quot;);">
             <div class="pattern height-resize">
                 <div class="container">                
@@ -450,8 +432,6 @@ $(document).ready(function () {
                                     <li data-target="#testimonial-carousel" data-slide-to="3"></li>
                                     <li data-target="#testimonial-carousel" data-slide-to="4"></li>
                                 </ol>
-
-                                <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
                                         <div class="testimonials text-center">
@@ -526,8 +506,6 @@ $(document).ready(function () {
                 </div> 
             </div>
         </section>
-
-        <!-- Contact Section -->
         <section id="contact" class="section-style" data-background-image="{{ asset('/images/background/grow_something.jpg')}}">
             <div class="pattern height-resize">
                 <div class="container">
@@ -535,7 +513,7 @@ $(document).ready(function () {
                         <span>
                             Contact
                         </span>
-                    </h3><!-- /.section-name -->
+                    </h3>
                     <h2 class="section-title">
                         Get in Touch 
                     </h2>
@@ -566,22 +544,20 @@ $(document).ready(function () {
                             <div class="col-sm-2">
                                 <input type="submit"  class="btn custom-btn col-xs-12" name="submit" value="submit"/>                               
                             </div>
-                        </div><!-- /.contact-box-hide -->
-                    </form><!-- /#contact-form -->                    
+                        </div>
+                    </form>                   
                     <div class="next-section">
                         <a class="go-to-page-top"><span></span></a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Contact Section End -->
-
         <footer class="footer-section" >
             <div class="pattern height-resize">
                 <div class="container">
                     <div class="row">                   
                         <div class="col-md-4">
-                            <div class="single-address">
+                            <div class="single-address one">
                                 <i class="icon-map"></i>
                                 <h3>Khedut Unity Address</h3>
                                 <address>
@@ -593,7 +569,7 @@ $(document).ready(function () {
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="single-address">
+                            <div class="single-address two">
                                 <i class="icon-clock"></i>
                                 <h3>Office Hours</h3>
                                 <address>
@@ -603,7 +579,7 @@ $(document).ready(function () {
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="single-address">
+                            <div class="single-address three">
                                 <i class="icon-call"></i>
                                 <h3>Phone &amp; E-mail</h3>
                                 <address>
@@ -616,8 +592,6 @@ $(document).ready(function () {
                 </div>
             </div>
         </footer>
-        <!-- jQuery Library -->
-
         <script type="text/javascript" src="{{ asset('/js/front/js/modernizr-2.8.0.min.js')}}"></script>
         <script type="text/javascript" src="{{ asset('/js/front/js/plugins.js')}}"></script>
         <script type="text/javascript" src="{{ asset('/js/front/js/functions.js')}}"></script>
@@ -625,12 +599,12 @@ $(document).ready(function () {
         <script type="text/javascript" src="{{ asset('/js/front/js/moment.min.js')}}"></script>
         <script type="text/javascript" src="{{ asset('/js/front/js/daterangepicker.js')}}"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107045624-1"></script>
-
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#birthday-form').on('submit', function (e) {
                     e.preventDefault();
                     var BirthdayData = new FormData($(this)[0]);
+                    $('#loadingmessage').show();  // show the loading message.
                     $.ajax({
                         url: "{{ url('/savebirthday') }}",
                         type: "POST",
@@ -643,6 +617,7 @@ $(document).ready(function () {
                         },
                         success: function (data) {
                             var obj = jQuery.parseJSON(JSON.stringify(data));
+                            $('#loadingmessage').hide(); // hide the loading message
                             if (obj.success) {
                                 $('#birthday-form')[0].reset();
                                 $('#birthdaymsg').html(obj.success);
@@ -741,9 +716,9 @@ $(document).ready(function () {
                     showDropdowns: true,
                     yearRange: '1950:' + new Date().getFullYear().toString()
                 },
-                        function (start, end, label) {
-                            var years = moment().diff(start, 'years');
-                        });
+                function (start, end, label) {
+                    var years = moment().diff(start, 'years');
+                });
             });
         </script>
     </body>

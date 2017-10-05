@@ -349,11 +349,19 @@ img {
     width: 100%;
     height: 275px;
 }
-.single-address.two i, .single-address.two h3 {
-    color: #0072bc;
-}
 .single-address{
     text-align: center;
+}
+.one i{
+    color: #ff9b18;
+    font-weight: 900;
+}
+.two i{
+    font-weight: 900;
+}
+.three i{
+    color: #4ab638;
+    font-weight: 900;
 }
 /*
 gallery css
