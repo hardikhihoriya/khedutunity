@@ -28,10 +28,9 @@ class BirthdayController extends Controller {
     }
 
     public function save() {
-        $birthdayData = Input::all();        
+        $birthdayData = Input::all();
         $date = $birthdayData['birthdate'];
         $birthdayData['birthdate'] = date('Y-m-d', strtotime($date));
-        //echo "<pre>"; print_r($birthdayData); die;
         $hiddenProfile = Input::get('hidden_profile');
         $birthdayData['birthdayImage'] = $hiddenProfile;
         if (Input::file()) {
@@ -123,7 +122,10 @@ class BirthdayController extends Controller {
         $records["data"] = $records["data"]->take($iDisplayLength)->offset($iDisplayStart)->get();
         if (!empty($records["data"])) {
             foreach ($records["data"] as $key => $_records) {
-                $edit = route('Birthday.edit', $_records->id);
+                $birthdayDate = $_records->birthdate;
+                $birthdayDate = date_create($_records->birthdate);                 
+                $edit = route('Birthday.edit', $_records->id);                               
+                $records["data"][$key]['birthdate'] = (date_format($birthdayDate, 'd-M-Y'));
                 $records["data"][$key]['birthdayImage'] = ($_records->birthdayImage != '' && File::exists(public_path($this->birthdayThumbImageUploadPath . $_records->birthdayImage)) ? '<img src="' . url($this->birthdayThumbImageUploadPath . $_records->birthdayImage) . '"  height="50" width="50">' : '<img src="' . asset('/uploads/user/thumb/default.png') . '" class="user-image" alt="Default Image" height="50" width="50">');
                 $records["data"][$key]['action'] = "&emsp;<a href='{$edit}' title='Edit Birthday' ><span class='glyphicon glyphicon-edit'></span></a>                                                    
                                                     &emsp;<a href='javascript:;' data-id='" . $_records->id . "' class='btn-delete-birthday' title='Delete Birthday' ><span class='glyphicon glyphicon-trash'></span></a>";

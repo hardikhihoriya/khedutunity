@@ -36,6 +36,7 @@ Route::get('/home', 'UsersController@getUser')->name('home');
 Route::get('/admin/add-user', 'UsersController@addUser');
 Route::post('/admin/saveUser', 'UsersController@saveUser');
 Route::get('/admin/users', 'UsersController@getUser');
+Route::post('/list-user-ajax', 'UsersController@listUsersAjax');
 Route::get('/admin/edituser/{id}', 'UsersController@editUser');
 Route::get('/admin/deleteuser/{id}', 'UsersController@deleteUser');
 

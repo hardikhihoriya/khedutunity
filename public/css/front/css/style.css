@@ -1269,6 +1269,20 @@ form.news-letter .btn:hover{
 #birthday-form{
     margin-top:25px;
     margin-bottom:10px;
+    position: relative;
+}
+#loadingmessage{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    text-align: center;
+}
+#loadingmessage img{
+    width: 10%;
+    position: relative;
+    top: 50%;
 }
 #birthday-form  input{
     height:60px;

@@ -25,9 +25,9 @@
         <!-- Custom styles for this template -->
         <link href="{{ asset('/css/front/css/new-age.css')}}" rel="stylesheet">
         <script type="text/javascript">
-            $(document).ready(function () {
-                $("#myModal").modal('show');
-            });
+$(document).ready(function () {
+    $("#myModal").modal('show');
+});
         </script>
         <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.js"></script>        
@@ -305,11 +305,12 @@
                         <span class="go_title celebrate">Book</span> <span class="green_title">Your </span> <span class="gu_title">Birthday</span>
                     </p>
                     <span id="birthdaymsg" class="contactmessage"></span>
-<!--                    <div id='loadingmessage' style='display:none'>
-                        <img src='/images/newbackground/giphy.gif'/>
-                    </div>-->
-                    <form id="birthday-form" method="post" enctype="multipart/form-data" class="clearfix">                        
+
+                    <form id="birthday-form" method="post" enctype="multipart/form-data" class="clearfix">                         
                         {{ csrf_field() }}
+                        <div id='loadingmessage' style='display:none'>
+                            <img src='/images/newbackground/giphy.gif'/>
+                        </div>
                         <div class="contact-box-hide">
                             <div class="col-sm-6">
                                 <input type="text"  class="form-control" id="lastname" name="firstname" required placeholder="Enter Your First Name">
@@ -346,7 +347,7 @@
                             <div class="col-sm-2">
                                 <input type="submit"  class="btn custom-btn col-xs-12" name="submit" value="Apply"/>                               
                             </div>
-                        </div>
+                        </div>                       
                     </form>
                 </div>
                 <div class="logoimage birth">
@@ -716,9 +717,9 @@
                     showDropdowns: true,
                     yearRange: '1950:' + new Date().getFullYear().toString()
                 },
-                function (start, end, label) {
-                    var years = moment().diff(start, 'years');
-                });
+                        function (start, end, label) {
+                            var years = moment().diff(start, 'years');
+                        });
             });
         </script>
     </body>
