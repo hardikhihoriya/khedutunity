@@ -24,6 +24,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/front/css/bootstrap-datetimepicker.css')}}" />
         <!-- Custom styles for this template -->
         <link href="{{ asset('/css/front/css/new-age.css')}}" rel="stylesheet">
+        <link href="{{ asset('/css/front/css/animate.min.css')}}" rel="stylesheet">
         <script type="text/javascript">
 $(document).ready(function () {
     $("#myModal").modal('show');
@@ -49,20 +50,27 @@ $(document).ready(function () {
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h2 class="modal-title">Information</h2>
+                        <h2 class="modal-title">Winter Tree Plantation Events</h2>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body">                       
                         <div class="logoimage mode">
                             <img src="{{ asset('/images/logo.png')}}"/>
                         </div> 
-                        <p  class="section-description top">
+                        <!--<p  class="section-description top">
                             Let's celebrate your birthday with Khedut Unity! </br>                           
                             Khedut Unity will plant one tree on your birthday to your birthday present. </br>
                             We should Become naturally benevolent Gujarat</br>
                             <span style=" color: #ffa125; font-size: 35px; line-height: initial;"> #Go #Green #Gujarat </span> </br>
                             <strong>Khedut Unity likewise gives amaze blessings to you.</strong><br>
                             <span style=" color: #744c25;">"Celebrate your birthday with nature!"</span>
-                        </p>                       
+                        </p>-->
+                        <p class="section-description top">
+                            Winter Tree Plantation Events 2017. </br>
+                            Let's join us with a white T-shirt.</br>
+                            A small initiative for true nature lovers. </br>
+                            Tree Plantation created with the idea that small things count and can have a big impact on People, on Environment & on Nature!</br>
+                            JOIN-US                             
+                        </p>                        
                     </div>
                 </div>
             </div>
@@ -82,6 +90,7 @@ $(document).ready(function () {
                             <li><a href="https://twitter.com/KhedutUnity" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>                            
                             <li><a href="https://plus.google.com/u/1/112667421578100531689" class="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="https://www.linkedin.com/company/khedutunity" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#home-slider" class="btn btn-success bu">Join Event</a></li>
                         </ul>
                     </div>                    
                     <div id="time_countdown" class="time-count-container">
@@ -285,6 +294,29 @@ $(document).ready(function () {
                     </div>
                 </div>
         </section>
+
+        <section id="home-slider" class="section-style">
+            <div class="container-fluid">                    
+                <p class="section-description app msg">
+                    <span class="go_title celebrate">Tree</span> <span class="green_blue">Plantation </span> <span class="gu_title">Event</span>
+                </p>
+                <div class="row">
+                    <div class="main-slider animate-in">
+                        <div class="slide-text">
+                            <h1>Winter Tree Plantation Events 2017</h1>
+                            <p class="section-description">Winter Tree Plantation Events 2017. Let's join us with a white T-shirt. A small initiative for true nature lovers. Tree Plantation created with the idea that small things count and can have a big impact on People, on Environment & on Nature!</p>
+                            <a href="https://www.facebook.com/events/131813097469373/?acontext=%7B%22ref%22%3A%2229%22%2C%22ref_notif_type%22%3A%22plan_user_joined%22%2C%22action_history%22%3A%22null%22%7D&notif_id=1507288199587994&notif_t=plan_user_joined" target="_blank" class="btn btn-primary jo">Join-us</a>
+                        </div>
+                        <img src="{{ asset('/images/home/slider/hill.png')}}" class="slider-hill" alt="slider image">
+                        <img src="{{ asset('/images/home/slider/house.png')}}" class="slider-house" alt="slider image">
+                        <img src="{{ asset('/images/home/slider/sun.png')}}" class="slider-sun" alt="slider image">
+                        <img src="{{ asset('/images/home/slider/birds1.png')}}" class="slider-birds1" alt="slider image">
+                        <img src="{{ asset('/images/home/slider/birds2.png')}}" class="slider-birds2" alt="slider image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="birthday" class="section-style" data-background-image="/images/newbackground/1920.jpg" style="background-image: url(&quot;/images/newbackground/1920.jpg&quot;);">
             <div class="pattern height-resize">                
                 <div class="container">

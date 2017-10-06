@@ -1416,7 +1416,134 @@ button.close {
 ---------------------------------------------------------------------- */
 
 
+/* Event section */
+.event_section{
+    width: 77%;
+    margin: 0 auto;
+}
+.green_blue{
+    display: inline-block;
+    font-size: 55px;
+    color: #5e3002;
+}
+#home-slider {
+    background: url(/images/home/slider-bg.png) 0 100% repeat-x;
+    position: relative;
+}
+#home-slider .main-slider {
+    position: relative;
+    height: 450px;
+}
+#home-slider .slide-text {
+    position: absolute;
+    top: 0;
+    left: 158px;
+    width: 426px;
+}
+#home-slider h1 {
+    margin-top: 75px;
+    margin-bottom: 22px;
+    font-size: 40px;
+    color: #7fb338;
+}
+.bu{
+    position: relative;
+    top: -10px;
+    left: 40px;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #86b744;
+}
+.jo{
+    border: none;
+    width: 30%;
+    text-transform: uppercase;
+    background-color: #86b744;
+}
+.slide-text a{
+    text-align: center;
+    position: relative;
+    left: 140px;
+}
+.slide-text a:hover{
+    background-color: #6a9732;    
+}
+.slide-text p{
+    color: #000;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+#home-slider .btn-common {
+    margin-top: 20px;
+}
+.btn-common {
+    font-size: 14px;
+    color: #0099ae;
+    border: 1px solid #0099ae;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 10px 25px;
+}
+.animate-in .slide-text {
+    -webkit-animation: fadeInLeftBig 700ms cubic-bezier(0.190,1.000,0.220,1.000) 200ms both;
+    animation: fadeInLeftBig 700ms cubic-bezier(0.190,1.000,0.220,1.000) 200ms both;
+}
 
+#home-slider .slider-hill {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.animate-in .slider-hill {
+    -webkit-animation: bounceInDown 1000ms ease-in-out 200ms both;
+    animation: bounceInDown 1000ms ease-in-out 200ms both;
+}
+#home-slider .slider-house {
+    position: absolute;
+    right: 110px;
+    bottom: -3px;
+}
+
+.animate-in .slider-house {
+    -webkit-animation: bounceInDown 500ms ease-in-out 800ms both;
+    animation: bounceInDown 500ms ease-in-out 800ms both;
+}
+
+#home-slider .slider-sun {
+    position: absolute;
+    right: 365px;
+    bottom: 100px;
+}
+
+.animate-in .slider-sun {
+    -webkit-animation: scaleIn 500ms ease-in-out 1200ms both;
+    animation: scaleIn 500ms ease-in-out 1200ms both;
+}
+
+#home-slider .slider-birds1 {
+    position: absolute;
+    right: 470px;
+    bottom: 75px;
+}
+
+.animate-in .slider-birds1 {
+    -webkit-animation: fadeInLeft 500ms ease-in-out 1200ms both;
+    animation: fadeInLeft 500ms ease-in-out 1200ms both;
+}
+
+#home-slider .slider-birds2 {
+    position: absolute;
+    right: 40px;
+    bottom: 150px;
+}
+
+.animate-in .slider-birds2 {
+    -webkit-animation: fadeInRight 500ms ease-in-out 1200ms both;
+    animation: fadeInRight 500ms ease-in-out 1200ms both;
+}
 
 /* 8 - Footer Section  
 ---------------------------------------------------------------------- */
@@ -1451,6 +1578,9 @@ button.close {
         width:100%;
         max-width:830px;
     }
+    #home-slider h1 {
+        margin-top: 0;
+    }
 }
 @media (min-width: 992px){
     .container{
@@ -1476,8 +1606,61 @@ button.close {
     .section-title{
         font-size:40px;
     }
+    .container-fluid{
+        width: 100%;
+    }
+    .bu{
+        top: 5px;
+        left: 0;
+    }
+    .slide-text{
+        width: 100%;
+    }
+    #home-slider .slide-text {
+        position: relative; 
+        top: 0;
+        left: 0px; 
+        width: 100%; 
+    }
+    #home-slider h1{
+        font-size: 20px;
+        margin: 10px;
+        font-weight: 800;
+        text-align: center;
+    }
+    #home-slider .slider-hill {
+        right: 56%;
+        margin-right: -200px;
+    }
+
+    #home-slider .slider-house {
+        right: 34%;
+        width: 100%;
+        margin-right: -125px;
+    }
+
+    #home-slider .slider-sun {
+        right: 50%;
+        margin-right: 60px;
+    }
+
+    #home-slider .slider-birds1 {
+        width: 70px;
+        right: 45%;
+        margin-right: 120px;
+    }
+
+    #home-slider .slider-birds2 {
+        width: 70px;
+        right: 60%;
+        margin-right: -200px;
+    }
+
     .shadow{
         text-shadow:none;
+    }
+    .Eventimage img{
+        display: none;
     }
     .modal-header .close {
         margin-top: 8px;
@@ -1505,7 +1688,10 @@ button.close {
     }
     .celebrate{
         font-size: 43px !important;
-        margin: 0 !important;
+        margin: 10px !important;
+    }
+    .green_blue {
+        margin: 10px !important;
     }
     .go_title{
         display: block;
@@ -1523,6 +1709,7 @@ button.close {
         font-size: 40px;
         color: rgba(74, 182, 56, 1);
         font-weight: 900;
+        margin: 10px !important;
     }
     #contact-form #first_name{
         border-right:1px solid #fff;
