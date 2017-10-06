@@ -64,7 +64,7 @@ class BirthdayController extends Controller {
                 }
             }
         }
-        if (!empty($birthdayData)) {
+        if (isset($birthdayData) && !empty($birthdayData)) {
             $this->objBirthday->create($birthdayData);
             $msg['success'] = 'Thank You Very Much...!';
             return $msg;
