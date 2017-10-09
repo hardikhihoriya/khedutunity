@@ -29,6 +29,15 @@ class BirthdayController extends Controller {
 
     public function save() {
         $birthdayData = Input::all();
+        if(empty($birthdayData['message'])){
+           $birthdayData['message'] = "save tree save life";
+        }
+        if(empty($birthdayData['tagline'])){
+           $birthdayData['tagline'] = "save environment";
+        }
+        if(empty($birthdayData['address'])){
+           $birthdayData['address'] = "Guajrat,India";
+        }        
         $date = $birthdayData['birthdate'];
         $birthdayData['birthdate'] = date('Y-m-d', strtotime($date));
         $hiddenProfile = Input::get('hidden_profile');

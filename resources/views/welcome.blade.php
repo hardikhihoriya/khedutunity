@@ -50,27 +50,21 @@ $(document).ready(function () {
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h2 class="modal-title">Winter Tree Plantation Events</h2>
+                        <h2 class="modal-title">KhedutUnity Work Information</h2>
                     </div>
                     <div class="modal-body">                       
                         <div class="logoimage mode">
                             <img src="{{ asset('/images/logo.png')}}"/>
                         </div> 
-                        <!--<p  class="section-description top">
+                        <p  class="section-description top">
                             Let's celebrate your birthday with Khedut Unity! </br>                           
-                            Khedut Unity will plant one tree on your birthday to your birthday present. </br>
+                            Khedut Unity will plant one tree on your Birthday,Anniversary,Wedding,</br>
+                            Memorial,Festival,Achievement,Gratitude,GET WELL SOON to present. </br>
                             We should Become naturally benevolent Gujarat</br>
                             <span style=" color: #ffa125; font-size: 35px; line-height: initial;"> #Go #Green #Gujarat </span> </br>
                             <strong>Khedut Unity likewise gives amaze blessings to you.</strong><br>
                             <span style=" color: #744c25;">"Celebrate your birthday with nature!"</span>
-                        </p>-->
-                        <p class="section-description top">
-                            Winter Tree Plantation Events 2017. </br>
-                            Let's join us with a white T-shirt.</br>
-                            A small initiative for true nature lovers. </br>
-                            Tree Plantation created with the idea that small things count and can have a big impact on People, on Environment & on Nature!</br>
-                            JOIN-US                             
-                        </p>                        
+                        </p>                                       
                     </div>
                 </div>
             </div>
@@ -90,7 +84,7 @@ $(document).ready(function () {
                             <li><a href="https://twitter.com/KhedutUnity" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>                            
                             <li><a href="https://plus.google.com/u/1/112667421578100531689" class="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="https://www.linkedin.com/company/khedutunity" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#home-slider" class="btn btn-success bu">Join Event</a></li>
+<!--                            <li><a href="#home-slider" class="btn btn-success bu">Join Event</a></li>-->
                         </ul>
                     </div>                    
                     <div id="time_countdown" class="time-count-container">
@@ -295,7 +289,7 @@ $(document).ready(function () {
                 </div>
         </section>
 
-        <section id="home-slider" class="section-style">
+<!--        <section id="home-slider" class="section-style">
             <div class="container-fluid">                    
                 <p class="section-description app msg">
                     <span class="go_title celebrate">Tree</span> <span class="green_blue">Plantation </span> <span class="gu_title">Event</span>
@@ -315,7 +309,7 @@ $(document).ready(function () {
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <section id="birthday" class="section-style" data-background-image="/images/newbackground/1920.jpg" style="background-image: url(&quot;/images/newbackground/1920.jpg&quot;);">
             <div class="pattern height-resize">                
@@ -327,14 +321,15 @@ $(document).ready(function () {
                     </h3>
                     <p  class="section-description top">
                         Let's celebrate your birthday with Khedut Unity! </br>                        
-                        Khedut Unity will plant one tree on your birthday to your birthday present. </br>
+                        Khedut Unity will plant one tree on your Birthday,Anniversary,Wedding,</br>
+                        Memorial,Festival,Achievement,Gratitude,GET WELL SOON to present. </br>
                         We should Become naturally benevolent Gujarat</br>
                         #Go #Green #Gujarat </br>
                         <strong>Khedut Unity likewise gives amaze blessings to you.</strong> </br>
                         "Celebrate your birthday with nature!"
                     </p>
                     <p class="section-description app msg">
-                        <span class="go_title celebrate">Book</span> <span class="green_title">Your </span> <span class="gu_title">Birthday</span>
+                        <span class="go_title celebrate">Book</span> <span class="green_title">Your </span> <span class="gu_title">Wishes</span>
                     </p>
                     <span id="birthdaymsg" class="contactmessage"></span>
 
